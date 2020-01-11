@@ -1,4 +1,4 @@
-[![Last Update](https://img.shields.io/badge/Last_Update-Nov_30,_2019-brightgreen)
+![Last Update](https://img.shields.io/badge/Last_Update-Nov_30,_2019-brightgreen)
 
 # The Old New Win32API
 
@@ -14,9 +14,8 @@ The reason why I manage this page is that it often provides information which
 is missing on MSDN or which is described there in a cryptic way, and also 
 because the blog is not easily searchable. 
 
-Note the links here are categorized by their topic instead of a chronological
-order. Sometimes, when appropriate, a single post may be put into multiple
-categories.
+The links here are categorized by their topic instead of a chronological order.
+Sometimes, when appropriate, a single post may be put into multiple categories.
 
 In some (quite rare) cases, links to other sources are included if they are
 found useful.
