@@ -1,3 +1,4 @@
+[![Last Update](https://img.shields.io/badge/Last_Update-Nov_30,_2019-brightgreen)
 
 # The Old New Win32API
 
@@ -5,7 +6,9 @@ This page provides list of links to subset of posts of Raymond Chen's famous
 blog **[The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)**. The
 subset is limited mainly to Win32API and some COM-related stuff. 
 
-(The Old New Thing archive has been scanned till the **Nov 30, 2019**.)
+**Disclaimer:** I am not claiming authorship of any linked contents. This is
+only about hopefully useful organization of the great articles Raymond has
+written over the years.
 
 The reason why I manage this page is that it often provides information which
 is missing on MSDN or which is described there in a cryptic way, and also 
