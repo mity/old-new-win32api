@@ -1,4 +1,4 @@
-![Last Update](https://img.shields.io/badge/Last_Update-Nov_30,_2019-brightgreen)
+![Last Update](https://img.shields.io/badge/Last_Update-Jan_11,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -226,6 +226,7 @@ found useful.
 * [Could there be any problems with calling `GetModuleFileNameEx` on your own process?](https://blogs.msdn.microsoft.com/oldnewthing/20160310-00/?p=93141)
 * [How can I specify that my DLL should resolve a DLL dependency from the same directory that the DLL is in?](https://blogs.msdn.microsoft.com/oldnewthing/20171011-00/?p=97195)
 * [After I made my DLL delay-load another DLL, my DLL has started crashing in its process detach code](https://devblogs.microsoft.com/oldnewthing/20190718-00/?p=102719)
+* [The different kinds of DLL planting](https://devblogs.microsoft.com/oldnewthing/20191231-00/?p=103282)
 
 ### `DllMain()`
 * [Some reasons not to do anything scary in your `DllMain`](http://blogs.msdn.com/b/oldnewthing/archive/2004/01/27/63401.aspx)
@@ -539,6 +540,7 @@ found useful.
 * [Multiplexing multiple tools into one in a tooltip](http://blogs.msdn.com/b/oldnewthing/archive/2006/06/28/649680.aspx)
 * [Generating tooltip text dynamically](http://blogs.msdn.com/b/oldnewthing/archive/2006/06/29/650752.aspx)
 * [Why can't I display a tooltip for a disabled window?](http://blogs.msdn.com/b/oldnewthing/archive/2007/04/05/2028099.aspx)
+* [Over-documenting `TTM_RELAYEVENT` and why it results in a one-second periodic timer running as long as the tooltip is visible](https://devblogs.microsoft.com/oldnewthing/20200110-00/?p=103316)
 
 ### Trackbars
 [Adding a `Ctrl`+arrow accelerator for moving the trackbar by just one unit, part 1: Initial plunge](https://blogs.msdn.microsoft.com/oldnewthing/20181023-00/?p=100035)
@@ -993,6 +995,7 @@ found useful.
 * [So how bad is it that I’m calling `RegOpenKey` instead of `RegOpenKeyEx`?](https://blogs.msdn.microsoft.com/oldnewthing/20160120-00/?p=92892)
 * [If I simply want to create a registry key but don’t intend to do anything else with it, what security access mask should I ask for?](https://blogs.msdn.microsoft.com/oldnewthing/20161128-00/?p=94815)
 * [How can I programmatically inspect and manipulate a registry hive file without mounting it?](https://blogs.msdn.microsoft.com/oldnewthing/20181015-00/?p=99975)
+* [Why doesn’t `RegSetKeySecurity` propagate inheritable ACEs, but `SetSecurityInfo` does?](https://devblogs.microsoft.com/oldnewthing/20200102-00/?p=103287)
 
 ## Locale
 
