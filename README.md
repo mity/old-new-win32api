@@ -45,7 +45,7 @@ found useful.
 * [Application (as a whole)](#application-as-a-whole)
   * [Command Line](#command-line)
   * [Taskbar](#taskbar)
-* [HWND (General Point of View)](#hwnd-general-point-of-view)
+* [`HWND` (General Point of View)](#hwnd-general-point-of-view)
   * [Windows Hierarchy](#windows-hierarchy)
   * [Window Styles](#window-styles)
   * [Window Classes](#window-classes)
@@ -312,7 +312,7 @@ found useful.
 * [What if I have two programs that are logically a single application, and I want them to be treated as a single group on the taskbar?](https://devblogs.microsoft.com/oldnewthing/20150810-00/?p=91141)
 * [Why does the taskbar icon for grouped windows change to something weird?](https://devblogs.microsoft.com/oldnewthing/20150812-00/?p=91831)
 
-## HWND (General Point of View)
+## `HWND` (General Point of View)
 
 * [What does it mean for a window to be Unicode?](https://devblogs.microsoft.com/oldnewthing/20180906-00/?p=99665)
 * [How can I get the actual window procedure address and not a thunk?](https://devblogs.microsoft.com/oldnewthing/20180720-00/?p=99295)
