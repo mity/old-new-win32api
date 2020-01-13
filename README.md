@@ -923,8 +923,8 @@ found useful.
 
 ## Memory
 
-* [Stupid memory-mapping tricks](http://devblogs.com/b/oldnewthing/archive/2003/10/07/55194.aspx)
-* [Creating a shared memory block that can grow in size](http://devblogs.com/b/oldnewthing/archive/2015/01/30/10589818.aspx)
+* [Stupid memory-mapping tricks](https://devblogs.microsoft.com/oldnewthing/20031007-00/?p=42263)
+* [Creating a shared memory block that can grow in size](https://devblogs.microsoft.com/oldnewthing/20150130-00/?p=44793)
 * [Why do I have to pass a valid page protection value to `VirtualAlloc` even if it ignores it?](https://devblogs.microsoft.com/oldnewthing/20171227-00/?p=97656)
 * [How can I include/exclude specific memory blocks in user-mode crash dumps?](https://devblogs.microsoft.com/oldnewthing/20181011-00/?p=99945)
 
