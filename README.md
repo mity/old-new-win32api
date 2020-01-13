@@ -115,8 +115,8 @@ found useful.
   * [ACL](#acl)
 * [Security Permissions, Attributes and Identifiers](#security-permissions-attributes-and-identifiers)
 * [Registry](#registry)
-* [NT Services](#nt-services)
 * [Locale](#locale)
+* [NT Services](#nt-services)
 * [Uncategorized](#uncategorized)
 
 ## Processes and Threads
@@ -990,8 +990,8 @@ found useful.
 
 ## Registry
 
-* [Beware of non-null-terminated registry strings](http://devblogs.com/b/oldnewthing/archive/2004/08/24/219444.aspx)
-* [The performance cost of reading a registry key](http://devblogs.com/b/oldnewthing/archive/2006/02/22/536920.aspx)
+* [Beware of non-null-terminated registry strings](https://devblogs.microsoft.com/oldnewthing/20040824-00/?p=38063)
+* [The performance cost of reading a registry key](https://devblogs.microsoft.com/oldnewthing/20060222-11/?p=32193)
 * [So how bad is it that I’m calling `RegOpenKey` instead of `RegOpenKeyEx`?](https://devblogs.microsoft.com/oldnewthing/20160120-00/?p=92892)
 * [If I simply want to create a registry key but don’t intend to do anything else with it, what security access mask should I ask for?](https://devblogs.microsoft.com/oldnewthing/20161128-00/?p=94815)
 * [How can I programmatically inspect and manipulate a registry hive file without mounting it?](https://devblogs.microsoft.com/oldnewthing/20181015-00/?p=99975)
