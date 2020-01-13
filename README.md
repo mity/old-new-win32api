@@ -473,77 +473,78 @@ found useful.
 
 ## Controls
 
-* [Just because you're a control doesn't mean that you're necessarily inside a dialog box](http://devblogs.com/b/oldnewthing/archive/2007/08/20/4470527.aspx)
+* [Just because you're a control doesn't mean that you're necessarily inside a dialog box](https://devblogs.microsoft.com/oldnewthing/20070820-00/?p=25513)
 
 ### Animation Controls
-* [Limitations of the shell animation control](http://devblogs.com/b/oldnewthing/archive/2005/02/16/374397.aspx)
-* [Why does the version 6 animation control not use a background thread?](http://devblogs.com/b/oldnewthing/archive/2006/03/16/552821.aspx)
+* [Limitations of the shell animation control](https://devblogs.microsoft.com/oldnewthing/20050216-00/?p=36433)
+* [Why does the version 6 animation control not use a background thread?](https://devblogs.microsoft.com/oldnewthing/?p=31883)
 
 ### Buttons
-* [What's the `BS_PUSHLIKE` button style for?](http://devblogs.com/b/oldnewthing/archive/2007/09/21/5021765.aspx) (Don't use, obsolete. Use check box or radio button instead.)
+* [What's the `BS_PUSHLIKE` button style for?](https://devblogs.microsoft.com/oldnewthing/20070921-00/?p=25023) (Don't use, it's completely obsolete nowadays. Use check box or radio button instead.)
 
 ### Edit Controls
-* [What's the deal with the `EM_SETHILITE` message?](http://devblogs.com/b/oldnewthing/archive/2007/10/25/5658731.aspx)
-* [Preventing edit control text from being autoselected in a dialog box](http://devblogs.com/b/oldnewthing/archive/2003/11/14/55678.aspx)
-* [How do I suppress the `CapsLock` warning on password edit controls?](http://devblogs.com/b/oldnewthing/archive/2008/10/10/8969403.aspx)
+* [What's the deal with the `EM_SETHILITE` message?](https://devblogs.microsoft.com/oldnewthing/20071025-00/?p=24693)
+* [Preventing edit control text from being autoselected in a dialog box](https://devblogs.microsoft.com/oldnewthing/20031114-00/?p=41823)
+* [How do I suppress the `CapsLock` warning on password edit controls?](https://devblogs.microsoft.com/oldnewthing/20081010-00/?p=20603)
 * [The early history of the `ES_NUMBER` edit control style](https://devblogs.microsoft.com/oldnewthing/20190220-00/?p=100975)
 * [How do I allow negative numbers with the `ES_NUMBER` edit control style?](https://devblogs.microsoft.com/oldnewthing/20190221-00/?p=100985)
 * [How do I permit a minus sign to be entered into my edit control, but only if it’s the first character?](https://devblogs.microsoft.com/oldnewthing/20190222-00/?p=100995)
 
 ### List Views
-* [Positioned vs. non-positioned listview views](http://devblogs.com/b/oldnewthing/archive/2004/07/12/180642.aspx)
-* [Displaying infotips for folded and unfolded listview items](http://devblogs.com/b/oldnewthing/archive/2006/12/13/1275990.aspx)
-* [Computing listview infotips in the background](http://devblogs.com/b/oldnewthing/archive/2006/12/14/1285437.aspx)
-* [What's the difference between `LVM_HITTEST` and `LVM_INSERTMARKHITTEST`?](http://devblogs.com/b/oldnewthing/archive/2007/10/24/5636575.aspx)
-* [Why is there an `LVN_ODSTATECHANGED` notification when there's already a perfectly good `LVN_ITEMCHANGED` notification?](http://devblogs.com/b/oldnewthing/archive/2010/10/28/10081818.aspx)
-* [Creating a listview with checkboxes on some items but not others](http://devblogs.com/b/oldnewthing/archive/2014/01/13/10489153.aspx)
-* [How can I programmatically resize a listview column to fit its contents?](http://devblogs.com/b/oldnewthing/archive/2015/03/09/10598602.aspx)
+* [Positioned vs. non-positioned listview views](https://devblogs.microsoft.com/oldnewthing/?p=38483)
+* [Displaying infotips for folded and unfolded listview items](https://devblogs.microsoft.com/oldnewthing/20061213-00/?p=28733)
+* [Computing listview infotips in the background](https://devblogs.microsoft.com/oldnewthing/20061214-02/?p=28713)
+* [What's the difference between `LVM_HITTEST` and `LVM_INSERTMARKHITTEST`?](https://devblogs.microsoft.com/oldnewthing/20071024-00/?p=24703)
+* [Why is there an `LVN_ODSTATECHANGED` notification when there's already a perfectly good `LVN_ITEMCHANGED` notification?](https://devblogs.microsoft.com/oldnewthing/20101028-00/?p=12423)
+* [Creating a listview with checkboxes on some items but not others](https://devblogs.microsoft.com/oldnewthing/20140113-00/?p=2103)
+* [How can I programmatically resize a listview column to fit its contents?](https://devblogs.microsoft.com/oldnewthing/20150309-00/?p=44513)
 * [How do I create a disabled checkbox for a listview item?](https://devblogs.microsoft.com/oldnewthing/20180524-00/?p=98825)
 
 ### Rich Text Controls
-* [The history of the RichEdit control from Murray Sargent](http://devblogs.com/b/oldnewthing/archive/2007/01/11/1450797.aspx)
-* [How do I load an entire file into a rich text control?](http://devblogs.com/b/oldnewthing/archive/2007/01/10/1444814.aspx)
-* [How do I put more than 32,000 characters into a rich text control?](http://devblogs.com/b/oldnewthing/archive/2007/01/11/1450795.aspx)
-* [How do I print the contents of a rich text control?](http://devblogs.com/b/oldnewthing/archive/2007/01/12/1455972.aspx)
+* ~~[The history of the RichEdit control from Murray Sargent](https://devblogs.microsoft.com/oldnewthing/20070111-20/?p=28433)~~
+  (The post is just a (broken) link to [https://blogs.msdn.microsoft.com/murrays/2006/10/19/some-richedit-history/](https://blogs.msdn.microsoft.com/murrays/2006/10/19/some-richedit-history/))
+* [How do I load an entire file into a rich text control?](https://devblogs.microsoft.com/oldnewthing/20070110-13/?p=28463)
+* [How do I put more than 32,000 characters into a rich text control?](https://devblogs.microsoft.com/oldnewthing/20070111-02/?p=28443)
+* [How do I print the contents of a rich text control?](https://devblogs.microsoft.com/oldnewthing/20070112-02/?p=28423)
 
 ### Scrollbars
-* [The scratch program](http://devblogs.com/b/oldnewthing/archive/2003/07/23/54576.aspx)
-* [Scrollbars, part 2](http://devblogs.com/b/oldnewthing/archive/2003/07/25/54582.aspx)
-* [Scrollbars, part 3: Optimizing the paint cycle](http://devblogs.com/b/oldnewthing/archive/2003/07/29/54591.aspx)
-* [Scrollbars, part 4: Adding a proportional scrollbar](http://devblogs.com/b/oldnewthing/archive/2003/07/31/54601.aspx)
-* Likely part 5: [Keyboard accessibility for scrollbars](http://devblogs.com/b/oldnewthing/archive/2003/08/05/54610.aspx)
-* Addendum to part 5: [A subtlety in the keyboard code](http://devblogs.com/b/oldnewthing/archive/2003/08/07/54617.aspx)
-* [Scrollbars part 6 - The wheel](http://devblogs.com/b/oldnewthing/archive/2003/08/07/54615.aspx)
-* [Scrollbars part 7 - Integrality](http://devblogs.com/b/oldnewthing/archive/2003/08/11/54629.aspx)
-* [Scrollbars part 8 - Integral interactive resizing](http://devblogs.com/b/oldnewthing/archive/2003/08/13/54639.aspx)
-* [Scrollbars part 9 - Maintaining the metaphor](http://devblogs.com/b/oldnewthing/archive/2003/09/09/54826.aspx)
-* [Scrollbars part 10 - Towards a deeper understanding of the `WM_NCCALCSIZE` message](http://devblogs.com/b/oldnewthing/archive/2003/09/11/54885.aspx)
-* [Scrollbars part 11: Towards an even deeper understanding of the `WM_NCCALCSIZE` message](http://devblogs.com/b/oldnewthing/archive/2003/09/15/54925.aspx)
-* [Answers to exercise from Scrollbars Part 11](http://devblogs.com/b/oldnewthing/archive/2003/09/17/54945.aspx)
-* [Scrollbars part 12: Applying `WM_NCCALCSIZE` to our scrollbar sample](http://devblogs.com/b/oldnewthing/archive/2003/09/17/54944.aspx)
-* [Scrollbars redux: Part 12](http://devblogs.com/b/oldnewthing/archive/2003/10/16/55344.aspx)
-* [There are two types of scrollbars](http://devblogs.com/b/oldnewthing/archive/2004/05/10/129068.aspx)
-* [Why was `WHEEL_DELTA` chosen to be 120 instead of a much more convenient value like 100 or even 10?](http://devblogs.com/b/oldnewthing/archive/2013/01/23/10387366.aspx)
+* [The scratch program](https://devblogs.microsoft.com/oldnewthing/20030723-00/?p=43073)
+* [Scrollbars, part 2](https://devblogs.microsoft.com/oldnewthing/20030725-00/?p=43053)
+* [Scrollbars, part 3: Optimizing the paint cycle](https://devblogs.microsoft.com/oldnewthing/20030729-00/?p=43033)
+* [Scrollbars, part 4: Adding a proportional scrollbar](https://devblogs.microsoft.com/oldnewthing/20030731-00/?p=43003)
+* Likely part 5: [Keyboard accessibility for scrollbars](https://devblogs.microsoft.com/oldnewthing/20030805-00/?p=42983)
+* Addendum to part 5: [A subtlety in the keyboard code](https://devblogs.microsoft.com/oldnewthing/20030807-00/?p=42953)
+* [Scrollbars part 6 - The wheel](https://devblogs.microsoft.com/oldnewthing/20030807-00/?p=42963)
+* [Scrollbars part 7 - Integrality](https://devblogs.microsoft.com/oldnewthing/20030811-00/?p=42933)
+* [Scrollbars part 8 - Integral interactive resizing](https://devblogs.microsoft.com/oldnewthing/20030813-00/?p=42913)
+* [Scrollbars part 9 - Maintaining the metaphor](https://devblogs.microsoft.com/oldnewthing/20030909-00/?p=42603)
+* [Scrollbars part 10 - Towards a deeper understanding of the `WM_NCCALCSIZE` message](https://devblogs.microsoft.com/oldnewthing/20030911-00/?p=42553)
+* [Scrollbars part 11: Towards an even deeper understanding of the `WM_NCCALCSIZE` message](https://devblogs.microsoft.com/oldnewthing/20030915-00/?p=42493)
+* [Answers to exercise from Scrollbars Part 11](https://devblogs.microsoft.com/oldnewthing/20030917-00/?p=42453)
+* [Scrollbars part 12: Applying `WM_NCCALCSIZE` to our scrollbar sample](https://devblogs.microsoft.com/oldnewthing/20030917-00/?p=42463)
+* [Scrollbars redux: Part 12](https://devblogs.microsoft.com/oldnewthing/20031016-00/?p=42133)
+* [There are two types of scrollbars](https://devblogs.microsoft.com/oldnewthing/20040510-00/?p=39413)
+* [Why was `WHEEL_DELTA` chosen to be 120 instead of a much more convenient value like 100 or even 10?](https://devblogs.microsoft.com/oldnewthing/20130123-00/?p=5473)
 * [Why does setting the horizontal scroll bar range for the first time also set the vertical range, and vice versa?](https://devblogs.microsoft.com/oldnewthing/20160727-00/?p=93965)
 
 ### Static Controls
-* [When will the static control automatically delete the image loaded into it, and when is it the responsibility of the application?](http://devblogs.com/b/oldnewthing/archive/2014/02/19/10501282.aspx)
+* [When will the static control automatically delete the image loaded into it, and when is it the responsibility of the application?](https://devblogs.microsoft.com/oldnewthing/20140219-00/?p=1713)
 
 ### Tab Controls
 * [How should I create controls on my dialog box that has a tab control?](https://devblogs.microsoft.com/oldnewthing/20191015-00/?p=102996)
 
 ### Toolbars
-* [Why are there both `TBSTYLE_EX_VERTICAL` and `CCS_VERT`?](http://devblogs.com/b/oldnewthing/archive/2007/03/28/1969030.aspx)
-* [How do I create a toolbar that sits in the taskbar?](http://devblogs.com/b/oldnewthing/archive/2009/11/09/9919503.aspx)
-* [How do I create a right-aligned toolbar button?](http://devblogs.com/b/oldnewthing/archive/2011/06/16/10175075.aspx)
-* [Creating custom tasks on a jump list](http://devblogs.com/b/oldnewthing/archive/2013/12/23/10484187.aspx)
+* [Why are there both `TBSTYLE_EX_VERTICAL` and `CCS_VERT`?](https://devblogs.microsoft.com/oldnewthing/20070328-00/?p=27473)
+* [How do I create a toolbar that sits in the taskbar?](https://devblogs.microsoft.com/oldnewthing/20091109-00/?p=16113)
+* [How do I create a right-aligned toolbar button?](https://devblogs.microsoft.com/oldnewthing/20110616-00/?p=10413)
+* [Creating custom tasks on a jump list](https://devblogs.microsoft.com/oldnewthing/20131223-00/?p=2303)
 
 ### Tooltips
-* [Coding in-place tooltips](http://devblogs.com/b/oldnewthing/archive/2006/06/26/647365.aspx)
-* [Using custom-draw in tooltips to adjust the font](http://devblogs.com/b/oldnewthing/archive/2006/06/27/648493.aspx)
-* [Multiplexing multiple tools into one in a tooltip](http://devblogs.com/b/oldnewthing/archive/2006/06/28/649680.aspx)
-* [Generating tooltip text dynamically](http://devblogs.com/b/oldnewthing/archive/2006/06/29/650752.aspx)
-* [Why can't I display a tooltip for a disabled window?](http://devblogs.com/b/oldnewthing/archive/2007/04/05/2028099.aspx)
+* [Coding in-place tooltips](https://devblogs.microsoft.com/oldnewthing/20060626-11/?p=30743)
+* [Using custom-draw in tooltips to adjust the font](https://devblogs.microsoft.com/oldnewthing/20060627-22/?p=30723)
+* [Multiplexing multiple tools into one in a tooltip](https://devblogs.microsoft.com/oldnewthing/20060628-05/?p=30703)
+* [Generating tooltip text dynamically](https://devblogs.microsoft.com/oldnewthing/20060629-00/?p=30693)
+* [Why can't I display a tooltip for a disabled window?](https://devblogs.microsoft.com/oldnewthing/20070405-00/?p=27363)
 * [Over-documenting `TTM_RELAYEVENT` and why it results in a one-second periodic timer running as long as the tooltip is visible](https://devblogs.microsoft.com/oldnewthing/20200110-00/?p=103316)
 
 ### Trackbars
