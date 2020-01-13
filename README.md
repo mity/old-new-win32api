@@ -241,46 +241,46 @@ found useful.
 ## Resources
 
 * [The Resource Compiler defaults to `CP_ACP`, even in the face of subtle hints that the file is UTF-8](https://devblogs.microsoft.com/oldnewthing/20190607-00/?p=102569)
-* [The relationship between module resources and resource-derived objects in 32-bit Windows](http://devblogs.com/b/oldnewthing/archive/2013/10/03/10453905.aspx)
-* [What's the difference between `FreeResource` and, say, `DestroyAcceleratorTable`](http://devblogs.com/b/oldnewthing/archive/2011/03/07/10137456.aspx)
-* [PE resources must be 4-byte aligned, but that doesn't stop people from trying other alignments](http://devblogs.com/b/oldnewthing/archive/2011/06/09/10172702.aspx)
-* [How can I tell that somebody used the `MAKEINTRESOURCE` macro to smuggle an integer inside a pointer?](http://devblogs.com/b/oldnewthing/archive/2013/09/25/10451812.aspx)
-* [Horrifically nasty gotcha: `FindResource` and `FindResourceEx`](http://devblogs.com/b/oldnewthing/archive/2015/01/01/10583784.aspx)
+* [The relationship between module resources and resource-derived objects in 32-bit Windows](https://devblogs.microsoft.com/oldnewthing/20131003-00/?p=3043)
+* [What's the difference between `FreeResource` and, say, `DestroyAcceleratorTable`](https://devblogs.microsoft.com/oldnewthing/20110307-00/?p=11283)
+* [PE resources must be 4-byte aligned, but that doesn't stop people from trying other alignments](https://devblogs.microsoft.com/oldnewthing/20110609-00/?p=10463)
+* [How can I tell that somebody used the `MAKEINTRESOURCE` macro to smuggle an integer inside a pointer?](https://devblogs.microsoft.com/oldnewthing/20130925-00/?p=3123)
+* [Horrifically nasty gotcha: `FindResource` and `FindResourceEx`](https://devblogs.microsoft.com/oldnewthing/20150101-00/?p=43243)
 
 ### Bitmap and Icon Resources
-* [The format of bitmap resources](http://devblogs.com/b/oldnewthing/archive/2009/12/11/9935462.aspx)
-* [The format of icon resources](http://devblogs.com/b/oldnewthing/archive/2012/07/20/10331787.aspx)
-* [The evolution of the ICO file format, part 1: Monochrome beginnings](http://devblogs.com/b/oldnewthing/archive/2010/10/18/10077133.aspx)
-* [The evolution of the ICO file format, part 2: Now in color!](http://devblogs.com/b/oldnewthing/archive/2010/10/19/10077610.aspx)
-* [The evolution of the ICO file format, part 3: Alpha-blended images](http://devblogs.com/b/oldnewthing/archive/2010/10/21/10078690.aspx)
-* [The evolution of the ICO file format, part 4: PNG images](http://devblogs.com/b/oldnewthing/archive/2010/10/22/10079192.aspx)
+* [The format of bitmap resources](https://devblogs.microsoft.com/oldnewthing/20091211-00/?p=15693)
+* [The format of icon resources](https://devblogs.microsoft.com/oldnewthing/20120720-00/?p=7083)
+* [The evolution of the ICO file format, part 1: Monochrome beginnings](https://devblogs.microsoft.com/oldnewthing/20101018-00/?p=12513)
+* [The evolution of the ICO file format, part 2: Now in color!](https://devblogs.microsoft.com/oldnewthing/20101019-00/?p=12503)
+* [The evolution of the ICO file format, part 3: Alpha-blended images](https://devblogs.microsoft.com/oldnewthing/20101021-00/?p=12483)
+* [The evolution of the ICO file format, part 4: PNG images](https://devblogs.microsoft.com/oldnewthing/20101022-00/?p=12473)
 
 ### Message String Resources
 * [Why does `Format­Message` say that `%0` terminates the message without a trailing newline? Is it secretly adding newlines?](https://devblogs.microsoft.com/oldnewthing/20191025-00/?p=103025)
 
 ### Dialog Templates
 * [On the difficulty of getting pixel-perfect layout in Win32 dialog templates](https://devblogs.microsoft.com/oldnewthing/20180510-00/?p=98725)
-* [The evolution of dialog templates - 32-bit Classic Templates](http://devblogs.com/b/oldnewthing/archive/2004/06/21/161375.aspx)
-* [The evolution of dialog templates - 32-bit Extended Templates](http://devblogs.com/b/oldnewthing/archive/2004/06/23/163596.aspx)
-* [The evolution of dialog templates - Summary](http://devblogs.com/b/oldnewthing/archive/2004/06/24/164737.aspx)
-* [The resource compiler will helpfully add window styles for you, but if you're building a dialog template yourself, you don't get that help](http://devblogs.com/b/oldnewthing/archive/2012/11/22/10370767.aspx)
+* [The evolution of dialog templates - 32-bit Classic Templates](https://devblogs.microsoft.com/oldnewthing/20040621-00/?p=38793)
+* [The evolution of dialog templates - 32-bit Extended Templates](https://devblogs.microsoft.com/oldnewthing/20040623-00/?p=38753)
+* [The evolution of dialog templates - Summary](https://devblogs.microsoft.com/oldnewthing/?p=38733)
+* [The resource compiler will helpfully add window styles for you, but if you're building a dialog template yourself, you don't get that help](https://devblogs.microsoft.com/oldnewthing/20121122-00/?p=6023)
 
 ### Menu Templates and Accelerator Resources
-* [The evolution of menu templates: Introduction](http://devblogs.com/b/oldnewthing/archive/2008/07/08/8705314.aspx)
-* [The evolution of menu templates: 32-bit classic menus](http://devblogs.com/b/oldnewthing/archive/2008/07/11/8719254.aspx)
-* [The evolution of menu templates: 32-bit extended menus](http://devblogs.com/b/oldnewthing/archive/2008/07/16/8735896.aspx)
-* [The format of accelerator table resources](http://devblogs.com/b/oldnewthing/archive/2007/03/16/1890749.aspx)
+* [The evolution of menu templates: Introduction](https://devblogs.microsoft.com/oldnewthing/20080708-00/?p=21713)
+* [The evolution of menu templates: 32-bit classic menus](https://devblogs.microsoft.com/oldnewthing/20080711-00/?p=21653)
+* [The evolution of menu templates: 32-bit extended menus](https://devblogs.microsoft.com/oldnewthing/20080716-00/?p=21603)
+* [The format of accelerator table resources](https://devblogs.microsoft.com/oldnewthing/20040130-00/?p=40813)
 
 ### String Resources
-* [The format of string resources](http://devblogs.com/b/oldnewthing/archive/2004/01/30/65013.aspx)
-* [`LoadString` can load strings with embedded nulls, but your wrapper function might not](http://devblogs.com/b/oldnewthing/archive/2009/10/09/9904648.aspx)
+* [The format of string resources](https://devblogs.microsoft.com/oldnewthing/20040130-00/?p=40813)
+* [`LoadString` can load strings with embedded nulls, but your wrapper function might not](https://devblogs.microsoft.com/oldnewthing/20091009-00/?p=16423)
 
 ### Version Templates
-* [The evolution of version resources - 32-bit version resources](http://devblogs.com/b/oldnewthing/archive/2006/12/21/1340571.aspx)
-* [The evolution of version resources - corrupted 32-bit version resources](http://devblogs.com/b/oldnewthing/archive/2006/12/22/1348663.aspx)
+* [The evolution of version resources - 32-bit version resources](https://devblogs.microsoft.com/oldnewthing/20061221-02/?p=28643)
+* [The evolution of version resources - corrupted 32-bit version resources](https://devblogs.microsoft.com/oldnewthing/20061222-00/?p=28623)
 
 ### Data and Custom Resources
-* [The format of data and custom resources](http://devblogs.com/b/oldnewthing/archive/2013/08/28/10444700.aspx)
+* [The format of data and custom resources](https://devblogs.microsoft.com/oldnewthing/20130828-00/?p=3383)
 
 ## Application (as a whole)
 
