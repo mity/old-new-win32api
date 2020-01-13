@@ -62,6 +62,7 @@ found useful.
 * [Controls](#controls)
   * [Animation Controls](#animation-controls)
   * [Buttons](#buttons)
+  * [Combo Boxes](#combo-boxes)
   * [Edit Controls](#edit-controls)
   * [List Views](#list-views)
   * [Rich Text Controls](#rich-text-controls)
@@ -482,6 +483,9 @@ found useful.
 ### Buttons
 * [What's the `BS_PUSHLIKE` button style for?](https://devblogs.microsoft.com/oldnewthing/20070921-00/?p=25023) (Don't use, it's completely obsolete nowadays. Use check box or radio button instead.)
 
+### Combo Boxes
+* [Speeding up adding items to a combobox or listbox](https://devblogs.microsoft.com/oldnewthing/20040610-00/?p=38933) (`WM_SETREDRAW`)
+
 ### Edit Controls
 * [What's the deal with the `EM_SETHILITE` message?](https://devblogs.microsoft.com/oldnewthing/20071025-00/?p=24693)
 * [Preventing edit control text from being autoselected in a dialog box](https://devblogs.microsoft.com/oldnewthing/20031114-00/?p=41823)
@@ -499,6 +503,7 @@ found useful.
 * [Creating a listview with checkboxes on some items but not others](https://devblogs.microsoft.com/oldnewthing/20140113-00/?p=2103)
 * [How can I programmatically resize a listview column to fit its contents?](https://devblogs.microsoft.com/oldnewthing/20150309-00/?p=44513)
 * [How do I create a disabled checkbox for a listview item?](https://devblogs.microsoft.com/oldnewthing/20180524-00/?p=98825)
+* [Speeding up adding items to a combobox or listbox](https://devblogs.microsoft.com/oldnewthing/20040610-00/?p=38933) (`WM_SETREDRAW`)
 
 ### Rich Text Controls
 * ~~[The history of the RichEdit control from Murray Sargent](https://devblogs.microsoft.com/oldnewthing/20070111-20/?p=28433)~~
@@ -598,69 +603,69 @@ found useful.
 ## Specific Messages
 
 ### Notifications
-* [What's the difference between the `wParam` of the `WM_NOTIFY` message and the `idFrom` in the `NMHDR` structure.](http://devblogs.com/b/oldnewthing/archive/2013/12/04/10473637.aspx)
-* [Restating the obvious about the `WM_COMMAND` message](http://devblogs.com/b/oldnewthing/archive/2006/03/02/542115.aspx)
-* [Restating the obvious about the `WM_NOTIFY` message](http://devblogs.com/b/oldnewthing/archive/2009/08/21/9877791.aspx)
+* [What's the difference between the `wParam` of the `WM_NOTIFY` message and the `idFrom` in the `NMHDR` structure.](https://devblogs.microsoft.com/oldnewthing/20131204-00/?p=2463)
+* [Restating the obvious about the `WM_COMMAND` message](https://devblogs.microsoft.com/oldnewthing/20060302-10/?p=32093)
+* [Restating the obvious about the `WM_NOTIFY` message](https://devblogs.microsoft.com/oldnewthing/20090821-00/?p=17033)
 
 ### Window Construction and Destruction
-* [What is the difference between `WM_DESTROY` and `WM_NCDESTROY`?](http://devblogs.com/b/oldnewthing/archive/2005/07/26/443384.aspx)
+* [What is the difference between `WM_DESTROY` and `WM_NCDESTROY`?](https://devblogs.microsoft.com/oldnewthing/20050726-00/?p=34803)
 * [How can I determine the reason why my window is closing?](https://devblogs.microsoft.com/oldnewthing/20190411-00/?p=102411) (`WM_CLOSE`)
 
 ### Window Geometry Messages
-* [Use `WM_WINDOWPOSCHANGED` to react to window state changes](http://devblogs.com/b/oldnewthing/archive/2008/01/15/7113860.aspx)
-* [Use `WM_WINDOWPOSCHANGING` to intercept window state changes](http://devblogs.com/b/oldnewthing/archive/2008/01/16/7123299.aspx)
+* [Use `WM_WINDOWPOSCHANGED` to react to window state changes](https://devblogs.microsoft.com/oldnewthing/20080115-00/?p=23813)
+* [Use `WM_WINDOWPOSCHANGING` to intercept window state changes](https://devblogs.microsoft.com/oldnewthing/20080116-00/?p=23803)
 
 ### Window Painting Messages
-* [Paint messages will come in as fast as you let them](http://devblogs.com/b/oldnewthing/archive/2011/12/19/10249000.aspx) (`WM_PAINT`)
-* [What happens if I don't paint when I get a `WM_PAINT` message?](http://devblogs.com/b/oldnewthing/archive/2014/12/03/10577531.aspx)
-* [What is the implementation of `WM_PRINTCLIENT`?](http://devblogs.com/b/oldnewthing/archive/2009/03/30/9517659.aspx)
-* [There's a default implementation for `WM_SETREDRAW`, but you might be able to do better](http://devblogs.com/b/oldnewthing/archive/2011/01/24/10119211.aspx)
-* [Speeding up adding items to a combobox or listbox](http://devblogs.com/b/oldnewthing/archive/2004/06/10/152612.aspx) (`WM_SETREDRAW`)
-* [Using `WM_SETREDRAW` to speed up adding a lot of elements to a control](http://devblogs.com/b/oldnewthing/archive/2014/04/07/10514610.aspx)
+* [Paint messages will come in as fast as you let them](https://devblogs.microsoft.com/oldnewthing/20111219-00/?p=8863) (`WM_PAINT`)
+* [What happens if I don't paint when I get a `WM_PAINT` message?](https://devblogs.microsoft.com/oldnewthing/20141203-00/?p=43483)
+* [What is the implementation of `WM_PRINTCLIENT`?](https://devblogs.microsoft.com/oldnewthing/20090330-00/?p=18683)
+* [There's a default implementation for `WM_SETREDRAW`, but you might be able to do better](https://devblogs.microsoft.com/oldnewthing/20110124-00/?p=11683)
+* [Speeding up adding items to a combobox or listbox](https://devblogs.microsoft.com/oldnewthing/20040610-00/?p=38933) (`WM_SETREDRAW`)
+* [Using `WM_SETREDRAW` to speed up adding a lot of elements to a control](https://devblogs.microsoft.com/oldnewthing/20140407-00/?p=1313)
 
 ### Window Focus Messages
-* [`WM_KILLFOCUS` is the wrong time to do field validation](http://devblogs.com/b/oldnewthing/archive/2004/04/19/115912.aspx)
-* [The dangers of playing focus games when handling a `WM_KILLFOCUS` message](http://devblogs.com/b/oldnewthing/archive/2005/08/08/448969.aspx)
-* [Why doesn't the `MoveWindow` function generate the `WM_GETMINMAXINFO` message?](http://devblogs.com/b/oldnewthing/archive/2009/03/09/9466834.aspx)
+* [`WM_KILLFOCUS` is the wrong time to do field validation](https://devblogs.microsoft.com/oldnewthing/20040419-00/?p=39753)
+* [The dangers of playing focus games when handling a `WM_KILLFOCUS` message](https://devblogs.microsoft.com/oldnewthing/20050808-16/?p=34673)
+* [Why doesn't the `MoveWindow` function generate the `WM_GETMINMAXINFO` message?](https://devblogs.microsoft.com/oldnewthing/20090309-00/?p=18903)
 
 ### Keyboard Messages
 * [How do I respond to the `WM_MENUCHAR` message?](https://devblogs.microsoft.com/oldnewthing/20171208-00/?p=97545)
 
 ### Mouse Messages
-* [Why is there no `WM_MOUSEENTER` message?](http://devblogs.com/b/oldnewthing/archive/2003/10/13/55279.aspx)
-* [Why do I get spurious `WM_MOUSEMOVE` messages?](http://devblogs.com/b/oldnewthing/archive/2003/10/01/55108.aspx)
-* [Sure, I can get spurious `WM_MOUSEMOVE` messages, but why do they keep streaming in?](http://devblogs.com/b/oldnewthing/archive/2009/06/17/9763416.aspx)
-* [How do I get mouse messages faster than `WM_MOUSEMOVE`?](http://devblogs.com/b/oldnewthing/archive/2012/03/14/10282406.aspx)
-* [Logical consequences of the way Windows converts single-clicks into double-clicks](http://devblogs.com/b/oldnewthing/archive/2004/10/15/242761.aspx)
-* [Implementing higher-order clicks](http://devblogs.com/b/oldnewthing/archive/2004/10/18/243925.aspx)
-* [How slow do you have to slow-double-click for it to be a rename?](http://devblogs.com/b/oldnewthing/archive/2008/11/10/9056610.aspx)
+* [Why is there no `WM_MOUSEENTER` message?](https://devblogs.microsoft.com/oldnewthing/20031013-00/?p=42193)
+* [Why do I get spurious `WM_MOUSEMOVE` messages?](https://devblogs.microsoft.com/oldnewthing/20031001-00/?p=42343)
+* [Sure, I can get spurious `WM_MOUSEMOVE` messages, but why do they keep streaming in?](https://devblogs.microsoft.com/oldnewthing/20090617-00/?p=17863)
+* [How do I get mouse messages faster than `WM_MOUSEMOVE`?](https://devblogs.microsoft.com/oldnewthing/20120314-00/?p=8103)
+* [Logical consequences of the way Windows converts single-clicks into double-clicks](https://devblogs.microsoft.com/oldnewthing/20041015-00/?p=37553)
+* [Implementing higher-order clicks](https://devblogs.microsoft.com/oldnewthing/20041018-00/?p=37543)
+* [How slow do you have to slow-double-click for it to be a rename?](https://devblogs.microsoft.com/oldnewthing/20081110-00/?p=20263)
 
 ### Dialog Messages
-* [Those who do not understand the dialog manager are doomed to reimplement it, badly](http://devblogs.com/b/oldnewthing/archive/2007/06/27/3555596.aspx)
-* [Managing the UI state of accelerators and focus rectangles](http://devblogs.com/b/oldnewthing/archive/2005/05/03/414317.aspx) (`WM_CHANGEUISTATE`, `WM_QUERYUISTATE` and `WM_UPDATEUISTATE`)
-* [Untangling the confusingly-named `WM_UPDATEUISTATE` and `WM_CHANGEUISTATE` messages](http://devblogs.com/b/oldnewthing/archive/2013/05/16/10419105.aspx)
-* [Who sends the initial `WM_UPDATEUISTATE` message?](http://devblogs.com/b/oldnewthing/archive/2013/05/17/10419502.aspx)
+* [Those who do not understand the dialog manager are doomed to reimplement it, badly](https://devblogs.microsoft.com/oldnewthing/20070627-00/?p=26243)
+* [Managing the UI state of accelerators and focus rectangles](https://devblogs.microsoft.com/oldnewthing/20050503-00/?p=35723) (`WM_CHANGEUISTATE`, `WM_QUERYUISTATE` and `WM_UPDATEUISTATE`)
+* [Untangling the confusingly-named `WM_UPDATEUISTATE` and `WM_CHANGEUISTATE` messages](https://devblogs.microsoft.com/oldnewthing/20130516-00/?p=4343)
+* [Who sends the initial `WM_UPDATEUISTATE` message?](https://devblogs.microsoft.com/oldnewthing/20130517-00/?p=4323)
 * [How can I prevent the keyboard focus rectangle from appearing on a control I created?](https://devblogs.microsoft.com/oldnewthing/20171206-00/?p=97526)
-* [Other tricks with `WM_GETDLGCODE`](http://devblogs.com/b/oldnewthing/archive/2003/11/26/55872.aspx)
-* [How do I prevent multi-line edit controls from eating the Enter key?](http://devblogs.com/b/oldnewthing/archive/2006/10/12/819674.aspx)
-* [Why do `DLGC_WANTALLKEYS` and `DLGC_WANTMESSAGE` have the same value?](http://devblogs.com/b/oldnewthing/archive/2007/06/26/3532603.aspx)
+* [Other tricks with `WM_GETDLGCODE`](https://devblogs.microsoft.com/oldnewthing/20031126-00/?p=41703)
+* [How do I prevent multi-line edit controls from eating the Enter key?](https://devblogs.microsoft.com/oldnewthing/20061012-06/?p=29413)
+* [Why do `DLGC_WANTALLKEYS` and `DLGC_WANTMESSAGE` have the same value?](https://devblogs.microsoft.com/oldnewthing/20070626-00/?p=26263)
 
 ### Other Messages
-* [The dangers of messing with activation when handling a `WM_ACTIVATE` message](http://devblogs.com/b/oldnewthing/archive/2005/08/09/449437.aspx)
-* [Why does my window get a `WM_ACTIVATE` message when it isn't active?](http://devblogs.com/b/oldnewthing/archive/2013/10/16/10456992.aspx)
-* [A timed context menu](http://devblogs.com/b/oldnewthing/archive/2005/03/07/387044.aspx) (`WM_CANCELMODE`)
-* [Pitfalls in handling the `WM_CONTEXTMENU` message](http://devblogs.com/b/oldnewthing/archive/2004/09/21/232369.aspx) (`WM_CONTEXTMENU`)
-* [Why do I have to return this goofy value for `WM_DEVICECHANGE`?](http://devblogs.com/b/oldnewthing/archive/2003/12/05/55936.aspx) (`WM_DEVICECHANGE`)
-* [Windows doesn't close windows when a user logs off; that's your call](http://devblogs.com/b/oldnewthing/archive/2008/04/21/8413175.aspx) (`WM_ENDSESSION`)
-* [Once you return from the `WM_ENDSESSION` message, your process can be terminated at any time](http://devblogs.com/b/oldnewthing/archive/2013/06/27/10429232.aspx) (`WM_ENDSESSION`)
-* [`WM_NCHITTEST` is for hit-testing, and hit-testing can happen for reasons other than the mouse being over your window](http://devblogs.com/b/oldnewthing/archive/2011/02/18/10131176.aspx)
+* [The dangers of messing with activation when handling a `WM_ACTIVATE` message](https://devblogs.microsoft.com/oldnewthing/20050809-13/?p=34653)
+* [Why does my window get a `WM_ACTIVATE` message when it isn't active?](https://devblogs.microsoft.com/oldnewthing/20131016-00/?p=2913)
+* [A timed context menu](https://devblogs.microsoft.com/oldnewthing/20050307-00/?p=36263) (`WM_CANCELMODE`)
+* [Pitfalls in handling the `WM_CONTEXTMENU` message](https://devblogs.microsoft.com/oldnewthing/20040921-00/?p=37813) (`WM_CONTEXTMENU`)
+* [Why do I have to return this goofy value for `WM_DEVICECHANGE`?](https://devblogs.microsoft.com/oldnewthing/20031205-00/?p=41613) (`WM_DEVICECHANGE`)
+* [Windows doesn't close windows when a user logs off; that's your call](https://devblogs.microsoft.com/oldnewthing/20080421-00/?p=22663) (`WM_ENDSESSION`)
+* [Once you return from the `WM_ENDSESSION` message, your process can be terminated at any time](https://devblogs.microsoft.com/oldnewthing/20130627-00/?p=3973) (`WM_ENDSESSION`)
+* [`WM_NCHITTEST` is for hit-testing, and hit-testing can happen for reasons other than the mouse being over your window](https://devblogs.microsoft.com/oldnewthing/20110218-00/?p=11453)
 * [How likely is it that a window will receive a `WM_NULL` message out of the blue?](https://devblogs.microsoft.com/oldnewthing/20170602-00/?p=96266) (`WM_NULL`)
-* [Why is there a special `PostQuitMessage` function?](http://devblogs.com/b/oldnewthing/archive/2005/11/04/489028.aspx) (`WM_QUIT`)
-* [How does `PostQuitMessage` know which thread to post the quit message to?](http://devblogs.com/b/oldnewthing/archive/2009/01/12/9306611.aspx) (`WM_QUIT`)
-* [Who is responsible for destroying the font passed in the `WM_SETFONT` message?](http://devblogs.com/b/oldnewthing/archive/2008/09/12/8945692.aspx) (`WM_SETFONT`)
-* [When I send a `WM_GETFONT` message to a window, why don't I get a font?](http://devblogs.com/b/oldnewthing/archive/2014/07/24/10544760.aspx) (`WM_GETFONT`)
-* [If my `WM_TIMER` handler takes longer than the timer period, will my queue fill up with `WM_TIMER` messages?](http://devblogs.com/b/oldnewthing/archive/2014/12/04/10577881.aspx)
-* [Killing a window timer prevents the `WM_TIMER` message from being generated for that timer, but it doesn't retroactively remove ones that were already generated](http://devblogs.com/b/oldnewthing/archive/2014/12/05/10578385.aspx)
+* [Why is there a special `PostQuitMessage` function?](https://devblogs.microsoft.com/oldnewthing/20051104-33/?p=33453) (`WM_QUIT`)
+* [How does `PostQuitMessage` know which thread to post the quit message to?](https://devblogs.microsoft.com/oldnewthing/20090112-00/?p=19533) (`WM_QUIT`)
+* [Who is responsible for destroying the font passed in the `WM_SETFONT` message?](https://devblogs.microsoft.com/oldnewthing/20080912-00/?p=20893) (`WM_SETFONT`)
+* [When I send a `WM_GETFONT` message to a window, why don't I get a font?](https://devblogs.microsoft.com/oldnewthing/20140724-00/?p=413) (`WM_GETFONT`)
+* [If my `WM_TIMER` handler takes longer than the timer period, will my queue fill up with `WM_TIMER` messages?](https://devblogs.microsoft.com/oldnewthing/20141204-00/?p=43473)
+* [Killing a window timer prevents the `WM_TIMER` message from being generated for that timer, but it doesn't retroactively remove ones that were already generated](https://devblogs.microsoft.com/oldnewthing/20141205-00/?p=43463)
 
 ## GDI
 
