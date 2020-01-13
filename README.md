@@ -984,16 +984,16 @@ found useful.
 
 ## Security Permissions, Attributes and Identifiers
 
-* [What is the default security descriptor?](http://devblogs.com/b/oldnewthing/archive/2004/03/12/88572.aspx)
-* [How do I convert a SID between binary and string forms?](http://devblogs.com/b/oldnewthing/archive/2004/03/15/89753.aspx)
-* [An easy way to determine whether you have a particular file permission](http://devblogs.com/b/oldnewthing/archive/2004/06/04/148426.aspx)
-* [What are the access rights and privileges that control changing ownership of an object?](http://devblogs.com/b/oldnewthing/archive/2005/08/18/453054.aspx)
-* [How do the names in the file security dialog map to access control masks?](http://devblogs.com/b/oldnewthing/archive/2007/07/26/4052149.aspx)
-* [If you ask for `STANDARD_RIGHTS_REQUIRED`, you may as well ask for the moon](http://devblogs.com/b/oldnewthing/archive/2008/02/27/7912126.aspx)
-* [A user's SID can change, so make sure to check the SID history](http://devblogs.com/b/oldnewthing/archive/2014/11/28/10576639.aspx)
-* [Detecting whether a SID is well-known SID](http://devblogs.com/b/oldnewthing/archive/2014/12/12/10580256.aspx)
-* [What's the point of giving my unnamed object proper security attributes since unnamed objects aren't accessible outside the process anyway (or are they?)](http://devblogs.com/b/oldnewthing/archive/2015/06/04/10619379.aspx)
-* [Is a SID with zero subauthorities a valid SID? It depends whom you ask](http://devblogs.com/b/oldnewthing/archive/2015/07/02/10624288.aspx)
+* [What is the default security descriptor?](https://devblogs.microsoft.com/oldnewthing/20040312-00/?p=40273)
+* [How do I convert a SID between binary and string forms?](https://devblogs.microsoft.com/oldnewthing/20150501-00/?p=44964)
+* [An easy way to determine whether you have a particular file permission](https://devblogs.microsoft.com/oldnewthing/20040604-00/?p=39023)
+* [What are the access rights and privileges that control changing ownership of an object?](https://devblogs.microsoft.com/oldnewthing/20050818-09/?p=34533)
+* [How do the names in the file security dialog map to access control masks?](https://devblogs.microsoft.com/oldnewthing/20070726-00/?p=25833)
+* [If you ask for `STANDARD_RIGHTS_REQUIRED`, you may as well ask for the moon](https://devblogs.microsoft.com/oldnewthing/20080227-00/?p=23303)
+* [A user's SID can change, so make sure to check the SID history](https://devblogs.microsoft.com/oldnewthing/20141128-00/?p=43513)
+* [Detecting whether a SID is well-known SID](https://devblogs.microsoft.com/oldnewthing/20141212-00/?p=43413)
+* [What's the point of giving my unnamed object proper security attributes since unnamed objects aren't accessible outside the process anyway (or are they?)](https://devblogs.microsoft.com/oldnewthing/20150604-00/?p=45451)
+* [Is a SID with zero subauthorities a valid SID? It depends whom you ask](https://devblogs.microsoft.com/oldnewthing/?p=45231)
 * [What’s the difference between duplicating the handle to a token and duplicating a token?](https://devblogs.microsoft.com/oldnewthing/20160511-00/?p=93446)
 * [I called `AdjustTokenPrivileges`, but I was still told that a necessary privilege was not held](https://devblogs.microsoft.com/oldnewthing/20190531-00/?p=102532)
 
