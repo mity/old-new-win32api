@@ -189,13 +189,14 @@ found useful.
 
 ### `WaitForMultipleObjects()` and Relatives
 
-* [`MsgWaitForMultipleObjects` and the queue state](http://devblogs.com/b/oldnewthing/archive/2005/02/17/375307.aspx)
+* [`MsgWaitForMultipleObjects` and the queue state](https://devblogs.microsoft.com/oldnewthing/20050217-00/?p=36423)
 * [You can call `MsgWaitForMultipleObjects` with zero handles](http://devblogs.com/b/oldnewthing/archive/2006/01/25/517395.aspx)
-* [Pumping messages while waiting for a period of time](http://devblogs.com/b/oldnewthing/archive/2006/01/26/517849.aspx)
-* [Waiting for all handles with `MsgWaitForMultipleObjects` is a bug waiting to happen](http://devblogs.com/b/oldnewthing/archive/2006/01/27/518307.aspx)
+* [Pumping messages while waiting for a period of time](https://devblogs.microsoft.com/oldnewthing/20060126-00/?p=32513)
+* [Waiting for all handles with `MsgWaitForMultipleObjects` is a bug waiting to happen](https://devblogs.microsoft.com/oldnewthing/20060127-17/?p=32493)
 * [Why does `WaitForMultipleObjects` return `ERROR_INVALID_PARAMETER` when all the parameters look valid to me?](http://devblogs.com/b/oldnewthing/archive/2011/02/25/10133817.aspx)
-* [If more than one object causes a `WaitForMultipleObjects` to return, how do I find out about the other ones?](http://devblogs.com/b/oldnewthing/archive/2015/04/09/10606269.aspx)
+* [If more than one object causes a `WaitForMultipleObjects` to return, how do I find out about the other ones?](https://devblogs.microsoft.com/oldnewthing/20150409-00/?p=44273)
 * [What’s the point of passing a never-signaled event to `MsgWaitForMultipleObjects`?](https://devblogs.microsoft.com/oldnewthing/20181114-00/?p=100215)
+
 ### Lock-Free Patterns
 * [Lock free many-producer/single-consumer patterns: A work queue with task coalescing](https://devblogs.microsoft.com/oldnewthing/20161121-00/?p=94755)
 * [Lock free many-producer/single-consumer patterns: A work queue where the last one wins](https://devblogs.microsoft.com/oldnewthing/20161122-00/?p=94765)
