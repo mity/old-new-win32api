@@ -190,10 +190,10 @@ found useful.
 ### `WaitForMultipleObjects()` and Relatives
 
 * [`MsgWaitForMultipleObjects` and the queue state](https://devblogs.microsoft.com/oldnewthing/20050217-00/?p=36423)
-* [You can call `MsgWaitForMultipleObjects` with zero handles](http://devblogs.com/b/oldnewthing/archive/2006/01/25/517395.aspx)
+* [You can call `MsgWaitForMultipleObjects` with zero handles](https://devblogs.microsoft.com/oldnewthing/20060125-18/?p=32533)
 * [Pumping messages while waiting for a period of time](https://devblogs.microsoft.com/oldnewthing/20060126-00/?p=32513)
 * [Waiting for all handles with `MsgWaitForMultipleObjects` is a bug waiting to happen](https://devblogs.microsoft.com/oldnewthing/20060127-17/?p=32493)
-* [Why does `WaitForMultipleObjects` return `ERROR_INVALID_PARAMETER` when all the parameters look valid to me?](http://devblogs.com/b/oldnewthing/archive/2011/02/25/10133817.aspx)
+* [Why does `WaitForMultipleObjects` return `ERROR_INVALID_PARAMETER` when all the parameters look valid to me?](https://devblogs.microsoft.com/oldnewthing/20110225-00/?p=11383)
 * [If more than one object causes a `WaitForMultipleObjects` to return, how do I find out about the other ones?](https://devblogs.microsoft.com/oldnewthing/20150409-00/?p=44273)
 * [What’s the point of passing a never-signaled event to `MsgWaitForMultipleObjects`?](https://devblogs.microsoft.com/oldnewthing/20181114-00/?p=100215)
 
