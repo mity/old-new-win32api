@@ -730,11 +730,11 @@ found useful.
 
 ## Accessibility
 
-* [Accessibility is not just for people with disabilities](http://devblogs.com/b/oldnewthing/archive/2006/08/16/702526.aspx)
-* [How to retrieve text under the cursor (mouse pointer)](http://devblogs.com/b/oldnewthing/archive/2004/04/23/118893.aspx)
-* [How do I set an accessible name on an unlabeled control?](http://devblogs.com/b/oldnewthing/archive/2011/10/13/10224265.aspx)
-* [How can I get notified when some other window is destroyed?](http://devblogs.com/b/oldnewthing/archive/2011/10/26/10230020.aspx)
-* [Using accessibility to monitor windows as they come and go](http://devblogs.com/b/oldnewthing/archive/2013/03/25/10404940.aspx)
+* [Accessibility is not just for people with disabilities](https://devblogs.microsoft.com/oldnewthing/?p=30093)
+* [How to retrieve text under the cursor (mouse pointer)](https://devblogs.microsoft.com/oldnewthing/20130408-00/?p=4733)
+* [How do I set an accessible name on an unlabeled control?](https://devblogs.microsoft.com/oldnewthing/20111013-00/?p=9393)
+* [How can I get notified when some other window is destroyed?](https://devblogs.microsoft.com/oldnewthing/20111026-00/?p=9263)
+* [Using accessibility to monitor windows as they come and go](https://devblogs.microsoft.com/oldnewthing/20130325-00/?p=4863)
 * [How can I write a program that monitors another window for a title change?](https://devblogs.microsoft.com/oldnewthing/20180601-00/?p=98895)
 
 ## COM
