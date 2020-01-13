@@ -238,7 +238,7 @@ found useful.
 
 ## Resources
 
-* [The Resource Compiler defaults to CP_ACP, even in the face of subtle hints that the file is UTF-8](https://devblogs.microsoft.com/oldnewthing/20190607-00/?p=102569)
+* [The Resource Compiler defaults to `CP_ACP`, even in the face of subtle hints that the file is UTF-8](https://devblogs.microsoft.com/oldnewthing/20190607-00/?p=102569)
 * [The relationship between module resources and resource-derived objects in 32-bit Windows](http://blogs.msdn.com/b/oldnewthing/archive/2013/10/03/10453905.aspx)
 * [What's the difference between `FreeResource` and, say, `DestroyAcceleratorTable`](http://blogs.msdn.com/b/oldnewthing/archive/2011/03/07/10137456.aspx)
 * [PE resources must be 4-byte aligned, but that doesn't stop people from trying other alignments](http://blogs.msdn.com/b/oldnewthing/archive/2011/06/09/10172702.aspx)
