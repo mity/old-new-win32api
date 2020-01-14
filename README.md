@@ -821,7 +821,7 @@ found useful.
 * [Don’t forget to implement canonical names for verbs in your shell context menu extension](https://devblogs.microsoft.com/oldnewthing/20170302-00/?p=95635)
 
 ### `IMultiLanguage`
-* [Converting between `LCID`s and RFC 1766 language codes](http://devblogs.com/b/oldnewthing/archive/2006/01/05/509642.aspx)
+* [Converting between `LCID`s and RFC 1766 language codes](https://devblogs.microsoft.com/oldnewthing/20060105-00/?p=32753)
 
 ### `INamespaceWalk`
 * [How can I control which parts of the shell namespace the `INamespaceWalk::Walk` operation will walk into?](https://devblogs.microsoft.com/oldnewthing/20171108-00/?p=97365)
@@ -829,12 +829,12 @@ found useful.
 * [Cancelling the `INamespace­Walk::Walk` operation a little faster](https://devblogs.microsoft.com/oldnewthing/20171110-00/?p=97385)
 
 ### Clipboard
-* [What happens when applications try to copy text by sending `Ctrl+C`](http://devblogs.com/b/oldnewthing/archive/2011/06/23/10178000.aspx)
-* [How do I make it so that users can copy static text on a dialog box to the clipboard easily?](http://devblogs.com/b/oldnewthing/archive/2012/03/01/10275051.aspx)
-* [What is the proper handling of `WM_RENDERFORMAT` and `WM_RENDERALLFORMATS`?](http://devblogs.com/b/oldnewthing/archive/2012/12/24/10380437.aspx)
-* [Copying a file to the clipboard so you can paste it into Explorer or an email message or whatever](http://devblogs.com/b/oldnewthing/archive/2013/05/20/10419965.aspx)
-* [Printing the contents of the clipboard as text to `stdout`](http://devblogs.com/b/oldnewthing/archive/2013/10/07/10454659.aspx)
-* [Improving the performance of `CF_HDROP` by providing file attribute information](http://devblogs.com/b/oldnewthing/archive/2014/06/09/10532207.aspx)
+* [What happens when applications try to copy text by sending `Ctrl+C`](https://devblogs.microsoft.com/oldnewthing/20110623-00/?p=10353)
+* [How do I make it so that users can copy static text on a dialog box to the clipboard easily?](https://devblogs.microsoft.com/oldnewthing/20120301-00/?p=8193)
+* [What is the proper handling of `WM_RENDERFORMAT` and `WM_RENDERALLFORMATS`?](https://devblogs.microsoft.com/oldnewthing/20121224-00/?p=5763)
+* [Copying a file to the clipboard so you can paste it into Explorer or an email message or whatever](https://devblogs.microsoft.com/oldnewthing/20130520-00/?p=4313)
+* [Printing the contents of the clipboard as text to `stdout`](https://devblogs.microsoft.com/oldnewthing/20131007-00/?p=3023)
+* [Improving the performance of `CF_HDROP` by providing file attribute information](https://devblogs.microsoft.com/oldnewthing/20140609-00/?p=783)
 
 ### Drag and Drop
 * [What a drag: Dragging text](http://devblogs.com/b/oldnewthing/archive/2008/03/11/8080077.aspx)
