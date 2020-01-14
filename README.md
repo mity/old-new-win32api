@@ -745,26 +745,26 @@ found useful.
 ## COM
 
 ### COM Apartments
-* [The dreaded "main" threading model](http://devblogs.com/b/oldnewthing/archive/2004/06/02/146671.aspx)
+* [The dreaded "main" threading model](https://devblogs.microsoft.com/oldnewthing/20040602-00/?p=39053)
 * [A slightly less brief introduction to COM apartments (but it’s still brief)](https://devblogs.microsoft.com/oldnewthing/20191125-00/?p=103135)
 * [Yo dawg, I hear you like COM apartments, so I put a COM apartment in your COM apartment so you can COM apartment while you COM apartment](https://devblogs.microsoft.com/oldnewthing/20191126-00/?p=103140)
 * [Setting up private COM contexts to allow yourself to unload cleanly](https://devblogs.microsoft.com/oldnewthing/20191127-00/?p=103153)
 * [How do you get into a context via `IContext­Callback::Context­Callback`?](https://devblogs.microsoft.com/oldnewthing/20191128-00/?p=103157)
 * [Using contexts to return to a COM apartment later](https://devblogs.microsoft.com/oldnewthing/20191129-00/?p=103162)
 * [What do the output values from `CoGetApartmentType` mean?](https://devblogs.microsoft.com/oldnewthing/20180208-00/?p=97986)
-* [User interface code + multi-threaded apartment = death](http://devblogs.com/b/oldnewthing/archive/2008/04/24/8420242.aspx)
-* [Other problems traced to violating COM single-threaded apartment rules in the shell](http://devblogs.com/b/oldnewthing/archive/2007/10/19/5515428.aspx)
+* [User interface code + multi-threaded apartment = death](https://devblogs.microsoft.com/oldnewthing/?p=22603)
+* [Other problems traced to violating COM single-threaded apartment rules in the shell](https://devblogs.microsoft.com/oldnewthing/20071019-00/?p=24733)
 
 ### COM Marshaling
-* [What is COM marshaling and how do I use it?](http://devblogs.com/b/oldnewthing/archive/2015/10/20/10648886.aspx)
-* [What are the rules for `CoMarshalInterThreadInterfaceInStream` and `CoGetInterfaceAndReleaseStream`?](devblogs.com/b/oldnewthing/archive/2015/10/21/10649190.aspx)
-* [What are the rules for `CoMarshalInterface` and `CoUnmarshalInterface`?](http://devblogs.com/b/oldnewthing/archive/2015/10/22/10649480.aspx)
-* [`CoGetInterfaceAndReleaseStream` does not mix with smart pointers](http://devblogs.com/b/oldnewthing/archive/2015/10/23/10649707.aspx)
-* [The COM marshaller uses the COM task allocator to allocate and free memory](http://devblogs.com/b/oldnewthing/archive/2009/09/23/9898230.aspx)
-* [Why do I get a `QueryInterface(IID_IMarshal)` and then nothing?](http://devblogs.com/b/oldnewthing/archive/2004/02/20/77120.aspx)
+* [What is COM marshaling and how do I use it?](https://devblogs.microsoft.com/oldnewthing/20151020-00/?p=91321)
+* [What are the rules for `CoMarshalInterThreadInterfaceInStream` and `CoGetInterfaceAndReleaseStream`?](https://devblogs.microsoft.com/oldnewthing/20151021-00/?p=91311)
+* [What are the rules for `CoMarshalInterface` and `CoUnmarshalInterface`?](https://devblogs.microsoft.com/oldnewthing/20151022-00/?p=91301)
+* [`CoGetInterfaceAndReleaseStream` does not mix with smart pointers](https://devblogs.microsoft.com/oldnewthing/20151023-00/?p=91291)
+* [The COM marshaller uses the COM task allocator to allocate and free memory](https://devblogs.microsoft.com/oldnewthing/20090923-00/?p=16613)
+* [Why do I get a `QueryInterface(IID_IMarshal)` and then nothing?](https://devblogs.microsoft.com/oldnewthing/20040220-00/?p=40533)
 
 ### COM Initialization
-* [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](http://devblogs.com/b/oldnewthing/archive/2012/11/08/10366704.aspx)
+* [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](https://devblogs.microsoft.com/oldnewthing/20121108-00/?p=6143)
 
 ### COM Error Handling
 * [What happens to my COM server-side object when clients die unexpectedly?](http://devblogs.com/b/oldnewthing/archive/2014/04/09/10515424.aspx)
