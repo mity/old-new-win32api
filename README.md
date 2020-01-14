@@ -94,8 +94,8 @@ found useful.
 * [Accessibility](#accessibility)
 * [COM](#com)
   * [COM Apartments](#com-apartments)
-  * [COM Marshaling](#com-marshaling)
   * [COM Initialization](#com-initialization)
+  * [COM Marshaling](#com-marshaling)
   * [COM Error Handling](#com-error-handling)
   * [GUIDs](#guids)
   * [COM Strings](#com-strings)
@@ -755,6 +755,9 @@ found useful.
 * [User interface code + multi-threaded apartment = death](https://devblogs.microsoft.com/oldnewthing/?p=22603)
 * [Other problems traced to violating COM single-threaded apartment rules in the shell](https://devblogs.microsoft.com/oldnewthing/20071019-00/?p=24733)
 
+### COM Initialization
+* [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](https://devblogs.microsoft.com/oldnewthing/20121108-00/?p=6143)
+
 ### COM Marshaling
 * [What is COM marshaling and how do I use it?](https://devblogs.microsoft.com/oldnewthing/20151020-00/?p=91321)
 * [What are the rules for `CoMarshalInterThreadInterfaceInStream` and `CoGetInterfaceAndReleaseStream`?](https://devblogs.microsoft.com/oldnewthing/20151021-00/?p=91311)
@@ -762,9 +765,6 @@ found useful.
 * [`CoGetInterfaceAndReleaseStream` does not mix with smart pointers](https://devblogs.microsoft.com/oldnewthing/20151023-00/?p=91291)
 * [The COM marshaller uses the COM task allocator to allocate and free memory](https://devblogs.microsoft.com/oldnewthing/20090923-00/?p=16613)
 * [Why do I get a `QueryInterface(IID_IMarshal)` and then nothing?](https://devblogs.microsoft.com/oldnewthing/20040220-00/?p=40533)
-
-### COM Initialization
-* [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](https://devblogs.microsoft.com/oldnewthing/20121108-00/?p=6143)
 
 ### COM Error Handling
 * [What happens to my COM server-side object when clients die unexpectedly?](http://devblogs.com/b/oldnewthing/archive/2014/04/09/10515424.aspx)
