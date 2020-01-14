@@ -851,11 +851,11 @@ found useful.
 * [How do I accept files to be opened via `IDropTarget` instead of on the command line? - bonus content](https://devblogs.microsoft.com/oldnewthing/20100528-01/?p=13883)
 
 ### Enumeration
-* [Using fibers to simplify enumerators, part 1: When life is easier for the enumerator](http://devblogs.com/b/oldnewthing/archive/2004/12/29/343664.aspx)
-* [Using fibers to simplify enumerators, part 2: When life is easier for the caller](http://devblogs.com/b/oldnewthing/archive/2004/12/30/344281.aspx)
-* [Using fibers to simplify enumerators, part 3: Having it both ways](http://devblogs.com/b/oldnewthing/archive/2004/12/31/344799.aspx)
-* [Using fibers to simplify enumerators, part 4: Filtering](http://devblogs.com/b/oldnewthing/archive/2005/01/03/345800.aspx)
-* [Using fibers to simplify enumerators, part 5: Composition](http://devblogs.com/b/oldnewthing/archive/2005/01/04/346274.aspx)
+* [Using fibers to simplify enumerators, part 1: When life is easier for the enumerator](https://devblogs.microsoft.com/oldnewthing/20041229-00/?p=36853)
+* [Using fibers to simplify enumerators, part 2: When life is easier for the caller](https://devblogs.microsoft.com/oldnewthing/20041230-00/?p=36843)
+* [Using fibers to simplify enumerators, part 3: Having it both ways](https://devblogs.microsoft.com/oldnewthing/20041231-00/?p=36833)
+* [Using fibers to simplify enumerators, part 4: Filtering](https://devblogs.microsoft.com/oldnewthing/20050103-00/?p=36823)
+* [Using fibers to simplify enumerators, part 5: Composition](https://devblogs.microsoft.com/oldnewthing/20050104-00/?p=36813)
 
 ### Shell
 * [When does `SHLoadInProc` unload a DLL?](http://devblogs.com/b/oldnewthing/archive/2004/06/28/167800.aspx)
