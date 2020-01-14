@@ -767,17 +767,17 @@ found useful.
 * [Why do I get a `QueryInterface(IID_IMarshal)` and then nothing?](https://devblogs.microsoft.com/oldnewthing/20040220-00/?p=40533)
 
 ### COM Error Handling
-* [What happens to my COM server-side object when clients die unexpectedly?](http://devblogs.com/b/oldnewthing/archive/2014/04/09/10515424.aspx)
-* [Why does COM require output pointers to be initialized even on failure?](http://devblogs.com/b/oldnewthing/archive/2009/12/31/9942465.aspx)
-* [How do I convert an `HRESULT` to a Win32 error code?](http://devblogs.com/b/oldnewthing/archive/2006/11/03/942851.aspx)
-* [Do not overload the `E_NOINTERFACE` error](http://devblogs.com/b/oldnewthing/archive/2006/12/08/1239911.aspx)
+* [What happens to my COM server-side object when clients die unexpectedly?](https://devblogs.microsoft.com/oldnewthing/20140409-00/?p=1293)
+* [Why does COM require output pointers to be initialized even on failure?](https://devblogs.microsoft.com/oldnewthing/20091231-00/?p=15463)
+* [How do I convert an `HRESULT` to a Win32 error code?](https://devblogs.microsoft.com/oldnewthing/20061103-07/?p=29133)
+* [Do not overload the `E_NOINTERFACE` error](https://devblogs.microsoft.com/oldnewthing/20061208-00/?p=28783)
 
 ### GUIDs
-* [What's the difference between `UuidFromString`, `IIDFromString`, `CLSIDFromString`, `GUIDFromString`...](http://devblogs.com/b/oldnewthing/archive/2015/10/15/10647906.aspx)
+* [What's the difference between `UuidFromString`, `IIDFromString`, `CLSIDFromString`, `GUIDFromString`...](https://devblogs.microsoft.com/oldnewthing/20151015-00/?p=91351)
 * [Why are there four functions for parsing strings into GUIDs, and why are they in three different DLLs?](https://devblogs.microsoft.com/oldnewthing/20160331-00/?p=93231)
 
 ### COM Strings
-* [Why is there a `BSTR` cache anyway?](http://devblogs.com/b/oldnewthing/archive/2015/01/07/10584656.aspx)
+* [Why is there a `BSTR` cache anyway?](https://devblogs.microsoft.com/oldnewthing/20150107-00/?p=43203)
 * [Raymond’s complete guide to `HSTRING` semantics](https://devblogs.microsoft.com/oldnewthing/20160615-00/?p=93675)
 * [What is the correct way of using the string buffer returned by the `WindowsPreallocateStringBuffer` function?](https://devblogs.microsoft.com/oldnewthing/20170913-00/?p=97015)
 
