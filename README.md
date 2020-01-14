@@ -359,7 +359,7 @@ found useful.
 * [What does the `CS_CLASSDC` class style do?](https://devblogs.microsoft.com/oldnewthing/20060602-00/?p=30993)
 * [Modifying the `CS_NOCLOSE` style does affect all windows of the class, just not necessarily in an immediately noticeable way](https://devblogs.microsoft.com/oldnewthing/20150305-00/?p=44533)
 * [Why does `PrintWindow` hate `CS_PARENTDC`? Because EVERYBODY hates `CS_PARENTDC`!](https://devblogs.microsoft.com/oldnewthing/20120604-00/?p=7463)
-* [Why does `PrintWindow` hate CS_`PARENTDC`? redux](https://devblogs.microsoft.com/oldnewthing/20140410-00/?p=1283)
+* [Why does `PrintWindow` hate `CS_PARENTDC`? redux](https://devblogs.microsoft.com/oldnewthing/20140410-00/?p=1283)
 * [Safer subclassing](https://devblogs.microsoft.com/oldnewthing/20031111-00/?p=41883)
 * [Private classes, superclassing, and global subclassing](https://devblogs.microsoft.com/oldnewthing/20100215-00/?p=14943)
 * [What makes `RealGetWindowClass` so much more real than `GetClassName`?](https://devblogs.microsoft.com/oldnewthing/20101231-00/?p=11863)
