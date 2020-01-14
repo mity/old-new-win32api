@@ -922,7 +922,7 @@ found useful.
 * [What is the underlying object behind a COM interface pointer?](https://devblogs.microsoft.com/oldnewthing/20070424-00/?p=27143)
 * [How to turn off the exception handler that COM "helpfully" wraps around your server](https://devblogs.microsoft.com/oldnewthing/20110120-00/?p=11713)
 * [Shortcuts are serializable objects, which means that they can be stored in places other than just a file](https://devblogs.microsoft.com/oldnewthing/20110224-00/?p=11403)
-* [Why does` IFileOperation` skip junctions even though I passed `FOFX_NOSKIPJUNCTIONS`?](https://devblogs.microsoft.com/oldnewthing/20110818-00/?p=9873)
+* [Why does `IFileOperation` skip junctions even though I passed `FOFX_NOSKIPJUNCTIONS`?](https://devblogs.microsoft.com/oldnewthing/20110818-00/?p=9873)
 * [Nasty gotcha: `STGM_READ | STGM_WRITE` does not grant read/write access](https://devblogs.microsoft.com/oldnewthing/20130719-00/?p=3763)
 * [How can I get the list of programs the same way that Programs and Features gets it?](https://devblogs.microsoft.com/oldnewthing/20131230-00/?p=2233)
 * [How do I obtain the computer manufacturer's name via C++?](https://devblogs.microsoft.com/oldnewthing/20140106-00/?p=2163) (`IWbemClassObject`)
