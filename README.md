@@ -1,4 +1,4 @@
-![Last Update](https://img.shields.io/badge/Last_Update-Jan_16,_2020-brightgreen)
+![Last Sync'ed](https://img.shields.io/badge/Last_Sync%27ed-Jan_16,_2020-brightgreen)
 
 # The Old New Win32API
 
