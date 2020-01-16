@@ -1,4 +1,4 @@
-![Last Update](https://img.shields.io/badge/Last_Update-Jan_11,_2020-brightgreen)
+![Last Update](https://img.shields.io/badge/Last_Update-Jan_16,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -880,7 +880,6 @@ found useful.
 * [One possible reason why `ShellExecute` returns `SE_ERR_ACCESSDENIED` and `ShellExecuteEx` returns `ERROR_ACCESS_DENIED`](https://devblogs.microsoft.com/oldnewthing/20101118-00/?p=12253)
 * [Why does `SHGetSpecialFolderPath` take such a long time before returning a network error?](https://devblogs.microsoft.com/oldnewthing/20110105-00/?p=11823)
 * [How do you obtain the icon for a shortcut without the shortcut overlay?](https://devblogs.microsoft.com/oldnewthing/20110127-00/?p=11653) (`SHGetFileInfo()`)
-* [Why does `SHGetKnownFolderPath` return `E_FAIL` for a known folder?](https://devblogs.microsoft.com/oldnewthing/20110209-00/?p=11543)
 * [How can I get information about the items in the Recycle Bin?](https://devblogs.microsoft.com/oldnewthing/20110830-00/?p=9773)
 * [Modernizing our simple program that retrieves information about the items in the Recycle Bin](https://devblogs.microsoft.com/oldnewthing/20110831-00/?p=9763)
 * [Invoking commands on items in the Recycle Bin](https://devblogs.microsoft.com/oldnewthing/20110901-00/?p=9753)
@@ -908,7 +907,9 @@ found useful.
 * [How do I register a command on the desktop background context menu? (And how do I remove one I don’t like?)](https://devblogs.microsoft.com/oldnewthing/20151208-00/?p=92342)
 * [How can I get the canonical name for a known folder?](https://devblogs.microsoft.com/oldnewthing/20160208-00/?p=93001)
 * [Peeking inside an `IShellItem` to see what it’s made of](https://devblogs.microsoft.com/oldnewthing/20160620-00/?p=93705)
+* [Why does `SHGetKnownFolderPath` return `E_FAIL` for a known folder?](https://devblogs.microsoft.com/oldnewthing/20110209-00/?p=11543)
 * [Why does `SHGetKnownFolderPath` fail when impersonating?](https://devblogs.microsoft.com/oldnewthing/20160601-00/?p=93555)
+* [Why can’t I use `SHSetKnownFolderPath` to change the location of `FOLDERID_LocalAppData`?](https://devblogs.microsoft.com/oldnewthing/20200115-00/?p=103329)
 * [How do I programmatically add a folder to my Documents library?](https://devblogs.microsoft.com/oldnewthing/20161107-00/?p=94655)
 * [Why doesn’t `SHGetFileInfo` give me customized folder icons?](https://devblogs.microsoft.com/oldnewthing/20170501-00/?p=96075)
 * [How can I detect that a shell item refers to a virtual folder, or to a file system inside a file?](https://devblogs.microsoft.com/oldnewthing/20171101-00/?p=97325)
