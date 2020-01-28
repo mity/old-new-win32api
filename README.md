@@ -1,4 +1,4 @@
-![Last Sync'ed](https://img.shields.io/badge/Last_Sync%27ed-Jan_16,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Update-Jan_28,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -86,6 +86,7 @@ found useful.
   * [Other Messages](#other-messages)
 * [GDI](#gdi)
   * [Brushes](#brushes)
+  * [Pens](#pens)
   * [DIB](#dib)
   * [`LockWindowUpdate()`](#lockwindowupdate)
   * [Painting Standard Elements](#painting-standard-elements)
@@ -690,12 +691,15 @@ found useful.
 * [How are `BitBlt` raster opcodes calculated?](https://devblogs.microsoft.com/oldnewthing/20180528-00/?p=98845)
 * [Notes on `DrawText` and tab stops](https://devblogs.microsoft.com/oldnewthing/20181010-00/?p=99935)
 * [Why doesn’t `GetTextExtentPoint` return the correct extent for strings containing tabs?](https://devblogs.microsoft.com/oldnewthing/20181012-00/?p=99955)
-* [How can I extract the color from a solid color GDI brush?](https://devblogs.microsoft.com/oldnewthing/20190802-00/?p=102747)
 
 ### Brushes
 * [The hollow brush](https://devblogs.microsoft.com/oldnewthing/20040126-00/?p=40903)
 * [Other uses for bitmap brushes](https://devblogs.microsoft.com/oldnewthing/20031009-00/?p=42213)
 * [What is the DC brush good for?](https://devblogs.microsoft.com/oldnewthing/20050420-28/?p=35843)
+* [How can I extract the color from a solid color GDI brush?](https://devblogs.microsoft.com/oldnewthing/20190802-00/?p=102747)
+
+### Pens
+* [Is there a difference between creating a null pen with `Create­Pen` and just using the stock null pen?](https://devblogs.microsoft.com/oldnewthing/20200127-00/?p=103368)
 
 ### DIB
 * [A survey of the various ways of creating GDI bitmaps with predefined data](https://devblogs.microsoft.com/oldnewthing/20170331-00/?p=95875)
