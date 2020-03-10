@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-Jan_28,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-Mar_10,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -113,6 +113,7 @@ found useful.
   * [Uncategorized COM Stuff](#uncategorized-com-stuff)
 * [Memory](#memory)
 * [Input and Output](#input-and-output)
+  * [Asynchronous Input and Output](#asynchronous-input-and-output)
   * [Files and Directories](#files-and-directories)
   * [ACL](#acl)
 * [Security Permissions, Attributes and Identifiers](#security-permissions-attributes-and-identifiers)
@@ -126,6 +127,7 @@ found useful.
 ### Processes
 * [`CreateProcess` does not wait for the process to start](https://devblogs.microsoft.com/oldnewthing/20050119-00/?p=36663)
 * [Why does the `CreateProcess` function modify its input command line?](https://devblogs.microsoft.com/oldnewthing/20090601-00/?p=18083)
+* [Why do people take a lock around `CreateProcess` calls?](https://devblogs.microsoft.com/oldnewthing/20200306-00/?p=103538)
 * [Disabling the program crash dialog](https://devblogs.microsoft.com/oldnewthing/20040727-00/?p=38323)
 * [How do I pass a lot of data to a process when it starts up?](https://devblogs.microsoft.com/oldnewthing/20031211-00/?p=41543)
 * [What was the purpose of the `hPrevInstance` parameter to `WinMain`?](https://devblogs.microsoft.com/oldnewthing/20040615-00/?p=38873)
@@ -157,6 +159,8 @@ found useful.
 * [How to avoid accessing freed memory when canceling a thread pool callback](https://devblogs.microsoft.com/oldnewthing/20180502-00/?p=98655)
 * [Avoiding deadlocks when cancelling a thread pool callback, part 1: External callback data](https://devblogs.microsoft.com/oldnewthing/20180503-00/?p=98665)
 * [Avoiding deadlocks when cancelling a thread pool callback, part 2: Referring back to the containing object](https://devblogs.microsoft.com/oldnewthing/20180504-00/?p=98675)
+* [Gotcha: A threadpool periodic timer will not wait for the previous tick to complete](https://devblogs.microsoft.com/oldnewthing/20200217-00/?p=103441)
+* [Why am I getting an exception from the thread pool during process shutdown?](https://devblogs.microsoft.com/oldnewthing/20200130-00/?p=103385)
 
 ### Thread Affinity of Objects
 * [Thread affinity of user interface objects, part 1: Window handles](https://devblogs.microsoft.com/oldnewthing/20051010-09/?p=33843)
@@ -178,6 +182,7 @@ found useful.
 * [Combining the work queue of distinct events, order not important, with an auto-reset event](https://devblogs.microsoft.com/oldnewthing/20170616-00/?p=96405)
 * [How fair are SRW locks, particularly when there are both readers and writers?](https://devblogs.microsoft.com/oldnewthing/20170705-00/?p=96535)
 * [You can use a file as a synchronization object, too](https://devblogs.microsoft.com/oldnewthing/20140905-00/?p=63)
+* [Can I wait for a kernel event to become *unsignaled*?](https://devblogs.microsoft.com/oldnewthing/20200305-00/?p=103535)
 
 ### `WaitOnAddress()`
 * [`WaitOnAddress` lets you create a synchronization object out of any data variable, even a byte](https://devblogs.microsoft.com/oldnewthing/20160823-00/?p=94145)
@@ -384,6 +389,7 @@ found useful.
 * [The `MARGINS` parameter to the `DwmExtendFrameIntoClientArea` function controls how far the frame extends into the client area](https://devblogs.microsoft.com/oldnewthing/20110113-00/?p=11763)
 * [How do I suppress the default animation that occurs when I hide or show a window?](https://devblogs.microsoft.com/oldnewthing/20121003-00/?p=6423)
 * [Display a custom thumbnail for your application (and while you're at it, a custom live preview)](https://devblogs.microsoft.com/oldnewthing/20130225-00/?p=5153)
+* [How can I detect that my window has been suppressed from the screen by the shell?](https://devblogs.microsoft.com/oldnewthing/20200302-00/?p=103507) ("window cloaking")
 
 ### Dialogs
 * [Why can't I create my dialog box? Rookie mistake #1](https://devblogs.microsoft.com/oldnewthing/?p=28123)
@@ -691,6 +697,7 @@ found useful.
 * [How are `BitBlt` raster opcodes calculated?](https://devblogs.microsoft.com/oldnewthing/20180528-00/?p=98845)
 * [Notes on `DrawText` and tab stops](https://devblogs.microsoft.com/oldnewthing/20181010-00/?p=99935)
 * [Why doesn’t `GetTextExtentPoint` return the correct extent for strings containing tabs?](https://devblogs.microsoft.com/oldnewthing/20181012-00/?p=99955)
+* [Why are there trivial functions like `Copy­Rect` and `Equal­Rect`?](https://devblogs.microsoft.com/oldnewthing/20200224-00/?p=103472)
 
 ### Brushes
 * [The hollow brush](https://devblogs.microsoft.com/oldnewthing/20040126-00/?p=40903)
@@ -761,6 +768,7 @@ found useful.
 
 ### COM Initialization
 * [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](https://devblogs.microsoft.com/oldnewthing/20121108-00/?p=6143)
+* [Crashing in COM after I call `CoUninitialize`, how can COM be running after it is uninitalized?](https://devblogs.microsoft.com/oldnewthing/20200129-00/?p=103380)
 
 ### COM Marshaling
 * [What is COM marshaling and how do I use it?](https://devblogs.microsoft.com/oldnewthing/20151020-00/?p=91321)
@@ -839,6 +847,7 @@ found useful.
 * [Copying a file to the clipboard so you can paste it into Explorer or an email message or whatever](https://devblogs.microsoft.com/oldnewthing/20130520-00/?p=4313)
 * [Printing the contents of the clipboard as text to `stdout`](https://devblogs.microsoft.com/oldnewthing/20131007-00/?p=3023)
 * [Improving the performance of `CF_HDROP` by providing file attribute information](https://devblogs.microsoft.com/oldnewthing/20140609-00/?p=783)
+* [What’s up with the `CF_SYLK` and `CF_DIF` clipboard formats?](https://devblogs.microsoft.com/oldnewthing/20200226-00/?p=103489)
 
 ### Drag and Drop
 * [What a drag: Dragging text](https://devblogs.microsoft.com/oldnewthing/20080311-00/?p=23153)
@@ -944,29 +953,35 @@ found useful.
 * [How can I include/exclude specific memory blocks in user-mode crash dumps?](https://devblogs.microsoft.com/oldnewthing/20181011-00/?p=99945)
 
 ## Input and Output
-* [Developing the method for taking advantage of the fact that the `OVERLAPPED` associated with asynchronous I/O is passed by address](https://devblogs.microsoft.com/oldnewthing/20101220-01/?p=11963)
+
 * [What's the difference between an asynchronous `PIPE_WAIT` pipe and a `PIPE_NOWAIT` pipe?](https://devblogs.microsoft.com/oldnewthing/20110114-00/?p=11753)
+* [Be careful when redirecting both a process's `stdin` and `stdout` to pipes, for you can easily deadlock](https://devblogs.microsoft.com/oldnewthing/20110707-00/?p=10223)
+* [Looking at the problem at the wrong level: Closing a process's `stdin`](https://devblogs.microsoft.com/oldnewthing/20110706-00/?p=10243)
+* [`ReadDirectoryChangesW` reads directory changes, but what if the directory doesn't change?](https://devblogs.microsoft.com/oldnewthing/20110812-00/?p=9913)
+* [How do `FILE_FLAG_SEQUENTIAL_SCAN` and `FILE_FLAG_RANDOM_ACCESS` affect how the operating system treats my file?](https://devblogs.microsoft.com/oldnewthing/20120120-00/?p=8493)
+* [You can use an `OVERLAPPED` structure with synchronous I/O, too](https://devblogs.microsoft.com/oldnewthing/20120405-00/?p=7923)
+* [We're currently using `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH`, but we would like our `WriteFile` to go even faster](https://devblogs.microsoft.com/oldnewthing/20140306-00/?p=1583)
+* [Why does my synchronous overlapped `ReadFile` return `FALSE` when the end of the file is reached?](https://devblogs.microsoft.com/oldnewthing/20150121-00/?p=44863)
+* [Why does `SetFileValidData` fail even though I enabled the `SE_MANAGE_VOLUME_NAME` privilege?](https://devblogs.microsoft.com/oldnewthing/20160603-00/?p=93565)
+* [Is `GENERIC_ALL` equivalent to `GENERIC_READ | GENERIC_WRITE | GENERIC_EXECUTE`?](https://devblogs.microsoft.com/oldnewthing/20170310-00/?p=95705)
+* [`CancelIoEx` can cancel I/O on console input, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20150323-00/?p=44413)
+* [`CancelIoEx` can cancel synchronous I/O, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20170928-00/?p=97105)
+* [Why does `IsPathRelative` return `FALSE` for paths that are drive-relative?](https://devblogs.microsoft.com/oldnewthing/20180222-00/?p=98075)
+
+### Asynchronous Input and Output
+* [Developing the method for taking advantage of the fact that the `OVERLAPPED` associated with asynchronous I/O is passed by address](https://devblogs.microsoft.com/oldnewthing/20101220-01/?p=11963)
 * [Ready... cancel... wait for it! (part 1)](https://devblogs.microsoft.com/oldnewthing/20110202-00/?p=11613)
 * [Ready... cancel... wait for it! (part 2)](https://devblogs.microsoft.com/oldnewthing/20110203-00/?p=11603)
 * [Ready... cancel... wait for it! (part 3)](https://devblogs.microsoft.com/oldnewthing/20110204-00/?p=11583)
 * [If you're waiting for I/O to complete, it helps if you actually have an I/O to begin with](https://devblogs.microsoft.com/oldnewthing/20110303-00/?p=11313)
-* [Be careful when redirecting both a process's `stdin` and `stdout` to pipes, for you can easily deadlock](https://devblogs.microsoft.com/oldnewthing/20110707-00/?p=10223)
-* [Looking at the problem at the wrong level: Closing a process's `stdin`](https://devblogs.microsoft.com/oldnewthing/20110706-00/?p=10243)
-* [`ReadDirectoryChangesW` reads directory changes, but what if the directory doesn't change?](https://devblogs.microsoft.com/oldnewthing/20110812-00/?p=9913)
 * [Why does my asynchronous I/O complete synchronously?](https://devblogs.microsoft.com/oldnewthing/20110923-00/?p=9563)
-* [How do `FILE_FLAG_SEQUENTIAL_SCAN` and `FILE_FLAG_RANDOM_ACCESS` affect how the operating system treats my file?](https://devblogs.microsoft.com/oldnewthing/20120120-00/?p=8493)
-* [You can use an `OVERLAPPED` structure with synchronous I/O, too](https://devblogs.microsoft.com/oldnewthing/20120405-00/?p=7923)
 * [If an asynchronous I/O completes synchronously, is the `hEvent` in the `OVERLAPPED` structure signaled anyway?](https://devblogs.microsoft.com/oldnewthing/20140206-00/?p=1853)
-* [We're currently using `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH`, but we would like our `WriteFile` to go even faster](https://devblogs.microsoft.com/oldnewthing/20140306-00/?p=1583)
+* [You can use an `OVERLAPPED` structure with synchronous I/O, too](https://devblogs.microsoft.com/oldnewthing/20120405-00/?p=7923)
 * [Why does my synchronous overlapped `ReadFile` return `FALSE` when the end of the file is reached?](https://devblogs.microsoft.com/oldnewthing/20150121-00/?p=44863)
-* [`CancelIoEx` can cancel I/O on console input, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20150323-00/?p=44413)
 * [If I issue a second overlapped I/O operation without waiting for the first one to complete, are they still guaranteed to complete in order?](https://devblogs.microsoft.com/oldnewthing/20160205-00/?p=92981)
-* [Why does `SetFileValidData` fail even though I enabled the `SE_MANAGE_VOLUME_NAME` privilege?](https://devblogs.microsoft.com/oldnewthing/20160603-00/?p=93565)
-* [Is `GENERIC_ALL` equivalent to `GENERIC_READ | GENERIC_WRITE | GENERIC_EXECUTE`?](https://devblogs.microsoft.com/oldnewthing/20170310-00/?p=95705)
-* [`CancelIoEx` can cancel synchronous I/O, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20170928-00/?p=97105)
-* [Why does `IsPathRelative` return `FALSE` for paths that are drive-relative?](https://devblogs.microsoft.com/oldnewthing/20180222-00/?p=98075)
 * [Why are my file write operations synchronous, even though I opened the file as `FILE_FLAG_OVERLAPPED`?](https://devblogs.microsoft.com/oldnewthing/20180725-00/?p=99335)
 * [File-extending writes are not always synchronous, which is entirely within the contract](https://devblogs.microsoft.com/oldnewthing/20181019-00/?p=100015)
+* [Why you might need additional control over the secret event hiding inside the file object](https://devblogs.microsoft.com/oldnewthing/20200221-00/?p=103466)
 
 ### Files and Directories
 * [The Definitive Guide on Win32 to NT Path Conversion](http://googleprojectzero.blogspot.cz/2016/02/the-definitive-guide-on-win32-to-nt.html)
@@ -1021,6 +1036,7 @@ found useful.
 
 * [Calling `ShutdownBlockReasonCreate` from my service doesn't stop the user from shutting down](https://devblogs.microsoft.com/oldnewthing/20151002-00/?p=91461)
 * [What does it mean when my attempt to stop a Windows NT service fails with `ERROR_BROKEN_PIPE`?](https://devblogs.microsoft.com/oldnewthing/20190405-00/?p=102389)
+* [How can I configure my Windows NT service to autostart when the system gains Internet access?](https://devblogs.microsoft.com/oldnewthing/20200227-00/?p=103494)
 
 ## Uncategorized
 
