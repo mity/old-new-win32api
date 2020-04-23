@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-March_10,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-April_22,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -83,7 +83,8 @@ found useful.
   * [Keyboard Messages](#keyboard-messages)
   * [Mouse Messages](#mouse-messages)
   * [Dialog Messages](#dialog-mesages)
-  * [Other Messages](#other-messages)
+  * [Other Window Messages](#other-window-messages)
+  * [System Messages](#system-messages)
 * [GDI](#gdi)
   * [Brushes](#brushes)
   * [Pens](#pens)
@@ -658,14 +659,11 @@ found useful.
 * [How do I prevent multi-line edit controls from eating the Enter key?](https://devblogs.microsoft.com/oldnewthing/20061012-06/?p=29413)
 * [Why do `DLGC_WANTALLKEYS` and `DLGC_WANTMESSAGE` have the same value?](https://devblogs.microsoft.com/oldnewthing/20070626-00/?p=26263)
 
-### Other Messages
+### Other Window Messages
 * [The dangers of messing with activation when handling a `WM_ACTIVATE` message](https://devblogs.microsoft.com/oldnewthing/20050809-13/?p=34653)
 * [Why does my window get a `WM_ACTIVATE` message when it isn't active?](https://devblogs.microsoft.com/oldnewthing/20131016-00/?p=2913)
 * [A timed context menu](https://devblogs.microsoft.com/oldnewthing/20050307-00/?p=36263) (`WM_CANCELMODE`)
 * [Pitfalls in handling the `WM_CONTEXTMENU` message](https://devblogs.microsoft.com/oldnewthing/20040921-00/?p=37813) (`WM_CONTEXTMENU`)
-* [Why do I have to return this goofy value for `WM_DEVICECHANGE`?](https://devblogs.microsoft.com/oldnewthing/20031205-00/?p=41613) (`WM_DEVICECHANGE`)
-* [Windows doesn't close windows when a user logs off; that's your call](https://devblogs.microsoft.com/oldnewthing/20080421-00/?p=22663) (`WM_ENDSESSION`)
-* [Once you return from the `WM_ENDSESSION` message, your process can be terminated at any time](https://devblogs.microsoft.com/oldnewthing/20130627-00/?p=3973) (`WM_ENDSESSION`)
 * [`WM_NCHITTEST` is for hit-testing, and hit-testing can happen for reasons other than the mouse being over your window](https://devblogs.microsoft.com/oldnewthing/20110218-00/?p=11453)
 * [How likely is it that a window will receive a `WM_NULL` message out of the blue?](https://devblogs.microsoft.com/oldnewthing/20170602-00/?p=96266) (`WM_NULL`)
 * [Why is there a special `PostQuitMessage` function?](https://devblogs.microsoft.com/oldnewthing/20051104-33/?p=33453) (`WM_QUIT`)
@@ -674,6 +672,13 @@ found useful.
 * [When I send a `WM_GETFONT` message to a window, why don't I get a font?](https://devblogs.microsoft.com/oldnewthing/20140724-00/?p=413) (`WM_GETFONT`)
 * [If my `WM_TIMER` handler takes longer than the timer period, will my queue fill up with `WM_TIMER` messages?](https://devblogs.microsoft.com/oldnewthing/20141204-00/?p=43473)
 * [Killing a window timer prevents the `WM_TIMER` message from being generated for that timer, but it doesn't retroactively remove ones that were already generated](https://devblogs.microsoft.com/oldnewthing/20141205-00/?p=43463)
+
+### System Messages
+* [If one program blocks shutdown, then *all* programs block shutdown](https://devblogs.microsoft.com/oldnewthing/20200414-00/?p=103671) (`WM_QUERY­END­SESSION`, `WM_END­SESSION`)
+* [Why do I have to return this goofy value for `WM_DEVICECHANGE`?](https://devblogs.microsoft.com/oldnewthing/20031205-00/?p=41613) (`WM_DEVICECHANGE`)
+* [Windows doesn't close windows when a user logs off; that's your call](https://devblogs.microsoft.com/oldnewthing/20080421-00/?p=22663) (`WM_ENDSESSION`)
+* [Once you return from the `WM_ENDSESSION` message, your process can be terminated at any time](https://devblogs.microsoft.com/oldnewthing/20130627-00/?p=3973) (`WM_ENDSESSION`)
+
 
 ## GDI
 
@@ -759,6 +764,7 @@ found useful.
 * [The dreaded "main" threading model](https://devblogs.microsoft.com/oldnewthing/20040602-00/?p=39053)
 * [A slightly less brief introduction to COM apartments (but it’s still brief)](https://devblogs.microsoft.com/oldnewthing/20191125-00/?p=103135)
 * [Yo dawg, I hear you like COM apartments, so I put a COM apartment in your COM apartment so you can COM apartment while you COM apartment](https://devblogs.microsoft.com/oldnewthing/20191126-00/?p=103140)
+* [What kind of apartment is the private apartment I created via `CLSID_Context­Switcher`?](https://devblogs.microsoft.com/oldnewthing/20200422-00/?p=103694)
 * [Setting up private COM contexts to allow yourself to unload cleanly](https://devblogs.microsoft.com/oldnewthing/20191127-00/?p=103153)
 * [How do you get into a context via `IContext­Callback::Context­Callback`?](https://devblogs.microsoft.com/oldnewthing/20191128-00/?p=103157)
 * [Using contexts to return to a COM apartment later](https://devblogs.microsoft.com/oldnewthing/20191129-00/?p=103162)
@@ -967,6 +973,7 @@ found useful.
 * [`CancelIoEx` can cancel I/O on console input, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20150323-00/?p=44413)
 * [`CancelIoEx` can cancel synchronous I/O, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20170928-00/?p=97105)
 * [Why does `IsPathRelative` return `FALSE` for paths that are drive-relative?](https://devblogs.microsoft.com/oldnewthing/20180222-00/?p=98075)
+* [The security check happens at the acquisition of the handle](https://devblogs.microsoft.com/oldnewthing/20200320-00/?p=103579)
 
 ### Asynchronous Input and Output
 * [Developing the method for taking advantage of the fact that the `OVERLAPPED` associated with asynchronous I/O is passed by address](https://devblogs.microsoft.com/oldnewthing/20101220-01/?p=11963)
@@ -1006,6 +1013,7 @@ found useful.
 
 ## Security Permissions, Attributes and Identifiers
 
+* [The security check happens at the acquisition of the handle](https://devblogs.microsoft.com/oldnewthing/20200320-00/?p=103579)
 * [What is the default security descriptor?](https://devblogs.microsoft.com/oldnewthing/20040312-00/?p=40273)
 * [How do I convert a SID between binary and string forms?](https://devblogs.microsoft.com/oldnewthing/20150501-00/?p=44964)
 * [An easy way to determine whether you have a particular file permission](https://devblogs.microsoft.com/oldnewthing/20040604-00/?p=39023)
@@ -1067,3 +1075,5 @@ found useful.
 * [The sad history of Unicode `printf`-style format specifiers in Visual C++](https://devblogs.microsoft.com/oldnewthing/20190830-00/?p=102823)
 * [Why are timer IDs and dialog control IDs 64-bit values on 64-bit Windows? Did you really expect people to create more than 4 billion timers or dialog controls?](https://devblogs.microsoft.com/oldnewthing/20191010-00/?p=102978)
 * [If you suppress GDI+ background thread, then you are expected to pump messages yourself](https://devblogs.microsoft.com/oldnewthing/20191029-00/?p=103033)
+* [If one program blocks shutdown, then *all* programs block shutdown](https://devblogs.microsoft.com/oldnewthing/20200414-00/?p=103671) (`WM_QUERY­END­SESSION`, `WM_END­SESSION`)
+* [When I ask the `GetIpAddrTable` function to sort the results, how are they sorted?](https://devblogs.microsoft.com/oldnewthing/20200415-00/?p=103673)
