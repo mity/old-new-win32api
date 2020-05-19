@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-April_22,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-May_19,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -1035,6 +1035,7 @@ found useful.
 * [If I simply want to create a registry key but don’t intend to do anything else with it, what security access mask should I ask for?](https://devblogs.microsoft.com/oldnewthing/20161128-00/?p=94815)
 * [How can I programmatically inspect and manipulate a registry hive file without mounting it?](https://devblogs.microsoft.com/oldnewthing/20181015-00/?p=99975)
 * [Why doesn’t `RegSetKeySecurity` propagate inheritable ACEs, but `SetSecurityInfo` does?](https://devblogs.microsoft.com/oldnewthing/20200102-00/?p=103287)
+* [Why does `Reg­Notify­Change­Key­Value` stop notifying once the key is deleted?](https://devblogs.microsoft.com/oldnewthing/20200507-00/?p=103733)
 
 ## Locale
 
@@ -1077,3 +1078,4 @@ found useful.
 * [If you suppress GDI+ background thread, then you are expected to pump messages yourself](https://devblogs.microsoft.com/oldnewthing/20191029-00/?p=103033)
 * [If one program blocks shutdown, then *all* programs block shutdown](https://devblogs.microsoft.com/oldnewthing/20200414-00/?p=103671) (`WM_QUERY­END­SESSION`, `WM_END­SESSION`)
 * [When I ask the `GetIpAddrTable` function to sort the results, how are they sorted?](https://devblogs.microsoft.com/oldnewthing/20200415-00/?p=103673)
+* [How can I detect that the system is no longer showing a UAC prompt?](https://devblogs.microsoft.com/oldnewthing/20200429-00/?p=103715) (`EVENT_SYSTEM_DESKTOP­SWITCH`)
