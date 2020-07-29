@@ -179,9 +179,9 @@ written over the years.
 * [Using fibers to expand a thread’s stack at runtime, part 2](https://devblogs.microsoft.com/oldnewthing/20200603-00/?p=103824)
 * [Using fibers to expand a thread’s stack at runtime, part 3](https://devblogs.microsoft.com/oldnewthing/20200604-00/?p=103833)
 * [Using fibers to expand a thread’s stack at runtime, part 4](https://devblogs.microsoft.com/oldnewthing/20200605-00/?p=103840)
-* [Comparing fibers to threads for the purpose of expanding a thread’s stack at runtime](https://devblogs.microsoft.com/oldnewthing/20200608-00/?p=103844)
 * [Using fibers to expand a thread’s stack at runtime, part 5](https://devblogs.microsoft.com/oldnewthing/20200611-00/?p=103858)
 * [Using fibers to expand a thread’s stack at runtime, part 6](https://devblogs.microsoft.com/oldnewthing/20200612-00/?p=103865)
+* [Comparing fibers to threads for the purpose of expanding a thread’s stack at runtime](https://devblogs.microsoft.com/oldnewthing/20200608-00/?p=103844)
 * [Determining approximately how much stack space is available, part 1](https://devblogs.microsoft.com/oldnewthing/20200609-00/?p=103847)
 * [Determining approximately how much stack space is available, part 2](https://devblogs.microsoft.com/oldnewthing/20200610-00/?p=103855)
 
