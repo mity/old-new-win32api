@@ -1,24 +1,24 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-May_19,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-July_28,_2020-brightgreen)
 
 # The Old New Win32API
 
-This page provides list of links to subset of posts of Raymond Chen's famous 
+This page provides a list of links to subset of posts of Raymond Chen's famous
 blog **[The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)**. The
 subset is limited mainly to Win32API and some COM-related stuff. 
 
-**Disclaimer:** I am not claiming authorship of any linked contents. This is
-only about hopefully useful organization of the great articles Raymond has
-written over the years.
-
 The reason why I manage this page is that it often provides information which
-is missing on MSDN or which is described there in a cryptic way, and also 
-because the blog is not easily searchable. 
+is missing on MSDN or which is described there in a cryptic way, and also
+because the blog is not easily searchable.
 
 The links here are categorized by their topic instead of a chronological order.
 Sometimes, when appropriate, a single post may be put into multiple categories.
 
 In some (quite rare) cases, links to other sources are included if they are
 found useful.
+
+**Disclaimer:** I am not claiming authorship of any linked contents. This is
+only about hopefully useful organization of the great articles Raymond has
+written over the years.
 
 
 ## Table of Contents
@@ -28,6 +28,7 @@ found useful.
   * [Threads](#threads)
   * [Thread Pools](#thread-pools)
   * [Thread Affinity of Objects](#thread-affinity-of-objects)
+  * [Thread Stack](#thread-stack)
   * [Fibers](#fibers)
 * [Synchronization](#synchronization)
   * [`WaitOnAddress()`](#waitonaddress)
@@ -105,6 +106,7 @@ found useful.
   * [`IUnknown`](#iunknown)
   * [`IMoniker`](#imoniker)
   * [`IContextMenu`](#icontextmenu)
+  * [`IFileDialog`](#ifiledialog)
   * [`IMultiLanguage`](#imultilanguage)
   * [`INamespaceWalk`](#inamespacewalk)
   * [Clipboard](#clipboard)
@@ -171,10 +173,23 @@ found useful.
 * [Thread affinity of user interface objects, part 5: Object clean-up](https://devblogs.microsoft.com/oldnewthing/20051014-19/?p=33763)
 * [Thread affinity of user interface objects: Addendum](https://devblogs.microsoft.com/oldnewthing/20121109-00/?p=6133)
 
+### Thread Stack
+* [How can I expand my thread’s stack at runtime?](https://devblogs.microsoft.com/oldnewthing/20200601-00/?p=103815)
+* [Using fibers to expand a thread’s stack at runtime, part 1](https://devblogs.microsoft.com/oldnewthing/20200602-00/?p=103819)
+* [Using fibers to expand a thread’s stack at runtime, part 2](https://devblogs.microsoft.com/oldnewthing/20200603-00/?p=103824)
+* [Using fibers to expand a thread’s stack at runtime, part 3](https://devblogs.microsoft.com/oldnewthing/20200604-00/?p=103833)
+* [Using fibers to expand a thread’s stack at runtime, part 4](https://devblogs.microsoft.com/oldnewthing/20200605-00/?p=103840)
+* [Comparing fibers to threads for the purpose of expanding a thread’s stack at runtime](https://devblogs.microsoft.com/oldnewthing/20200608-00/?p=103844)
+* [Using fibers to expand a thread’s stack at runtime, part 5](https://devblogs.microsoft.com/oldnewthing/20200611-00/?p=103858)
+* [Using fibers to expand a thread’s stack at runtime, part 6](https://devblogs.microsoft.com/oldnewthing/20200612-00/?p=103865)
+* [Determining approximately how much stack space is available, part 1](https://devblogs.microsoft.com/oldnewthing/20200609-00/?p=103847)
+* [Determining approximately how much stack space is available, part 2](https://devblogs.microsoft.com/oldnewthing/20200610-00/?p=103855)
+
 ### Fibers
 * [What happens to the fibers which ran on a thread when the thread exits?](https://devblogs.microsoft.com/oldnewthing/20100225-00/?p=14813)
 * [It's fine to use fibers, but everybody has to be on board with the plan](https://devblogs.microsoft.com/oldnewthing/20100226-00/?p=14793)
 * [Fibers aren’t useful for much any more; there’s just one corner of it that remains useful for a reason unrelated to fibers](https://devblogs.microsoft.com/oldnewthing/20191011-00/?p=102989)
+
 
 ## Synchronization
 
@@ -838,6 +853,9 @@ found useful.
 * [Psychic debugging: Why your `IContextMenu::InvokeCommand` doesn't get called even though you returned success from `IContextMenu::QueryContextMenu`](https://devblogs.microsoft.com/oldnewthing/20130201-00/?p=5383)
 * [Don’t forget to implement canonical names for verbs in your shell context menu extension](https://devblogs.microsoft.com/oldnewthing/20170302-00/?p=95635)
 
+### `IFileDialog`
+* [The `SetClientGuid` method of the common file and folder dialogs lets you give names to those dialogs, too](https://devblogs.microsoft.com/oldnewthing/20200527-00/?p=103801) (multiple contexts for open/save dialogs)
+
 ### `IMultiLanguage`
 * [Converting between `LCID`s and RFC 1766 language codes](https://devblogs.microsoft.com/oldnewthing/20060105-00/?p=32753)
 
@@ -933,6 +951,7 @@ found useful.
 * [Why doesn’t `SHGetFileInfo` give me customized folder icons?](https://devblogs.microsoft.com/oldnewthing/20170501-00/?p=96075)
 * [How can I detect that a shell item refers to a virtual folder, or to a file system inside a file?](https://devblogs.microsoft.com/oldnewthing/20171101-00/?p=97325)
 * [Why is there a limit of 15 shell icon overlays?](https://devblogs.microsoft.com/oldnewthing/20190313-00/?p=101094)
+* [The case of the `SHGet­Folder­Path(CSIDL_COMMON_DOCUMENTS)` that returned `ERROR_PATH_NOT_FOUND`](https://devblogs.microsoft.com/oldnewthing/20200520-00/?p=103775)
 
 ### Uncategorized COM Stuff
 * [The macros for declaring and implementing COM interfaces](https://devblogs.microsoft.com/oldnewthing/20041005-00/?p=37653)
