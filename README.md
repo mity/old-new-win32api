@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-July_28,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-October_23,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -96,6 +96,7 @@ written over the years.
   * [Multiple Monitors](#multiple-monitors)
 * [Accessibility](#accessibility)
 * [COM](#com)
+  * [Declaring COM Interfaces](#declaring-com-interfaces)
   * [COM Apartments](#com-apartments)
   * [COM Initialization](#com-initialization)
   * [COM Marshaling](#com-marshaling)
@@ -121,7 +122,7 @@ written over the years.
   * [ACL](#acl)
 * [Security Permissions, Attributes and Identifiers](#security-permissions-attributes-and-identifiers)
 * [Registry](#registry)
-* [Locale](#locale)
+* [Strings and Locales](#strings-and-locales)
 * [NT Services](#nt-services)
 * [Uncategorized](#uncategorized)
 
@@ -410,7 +411,6 @@ written over the years.
 ### Dialogs
 * [Why can't I create my dialog box? Rookie mistake #1](https://devblogs.microsoft.com/oldnewthing/?p=28123)
 * [Why can't I create my dialog box? Rookie mistake #2](https://devblogs.microsoft.com/oldnewthing/20070207-04/?p=28113)
-* [If I have a modeless dialog box with custom accelerators, which should I call first: `IsDialogMessage` or `TranslateAccelerator`](https://devblogs.microsoft.com/oldnewthing/20160818-00/?p=94115)
 * [Returning values from a dialog procedure](https://devblogs.microsoft.com/oldnewthing/20031107-00/?p=41923)
 * [A different type of dialog procedure](https://devblogs.microsoft.com/oldnewthing/20031112-00/?p=41863)
 * [Another different type of dialog procedure](https://devblogs.microsoft.com/oldnewthing/20031113-00/?p=41843)
@@ -429,9 +429,11 @@ written over the years.
 * [Never leave focus on a disabled control](https://devblogs.microsoft.com/oldnewthing/20040804-00/?p=38243)
 * [A subtlety in restoring previous window position](https://devblogs.microsoft.com/oldnewthing/20050314-00/?p=36203)
 * [Things you already know: How do I wait until my dialog box is displayed before doing something?](https://devblogs.microsoft.com/oldnewthing/20060922-03/?p=29623)
-* [Gentle reminder: On a dialog box, do not give OK and Cancel accelerators](https://devblogs.microsoft.com/oldnewthing/20080508-00/?p=22403)
 * [What does `TranslateAccelerator` do?](https://devblogs.microsoft.com/oldnewthing/20080523-00/?p=22203)
+* [If I have a modeless dialog box with custom accelerators, which should I call first: `IsDialogMessage` or `TranslateAccelerator`](https://devblogs.microsoft.com/oldnewthing/20160818-00/?p=94115)
+* [Gentle reminder: On a dialog box, do not give OK and Cancel accelerators](https://devblogs.microsoft.com/oldnewthing/20080508-00/?p=22403)
 * [Why are accelerators for hidden controls still active?](https://devblogs.microsoft.com/oldnewthing/?p=22113)
+* [How do I make my accelerators apply only when used in the main window and not when the user is using a modeless dialog?](https://devblogs.microsoft.com/oldnewthing/20200807-00/?p=104056)
 * [Why doesn't the `TAB` key work on controls I've marked as `WS_TABSTOP`?](https://devblogs.microsoft.com/oldnewthing/20100930-00/?p=12683)
 * [You can't use the `WM_USER` message in a dialog box](https://devblogs.microsoft.com/oldnewthing/20121024-00/?p=6263)
 * [How can I make a dialog box right-to-left at runtime?](https://devblogs.microsoft.com/oldnewthing/20181122-00/?p=100295)
@@ -718,6 +720,7 @@ written over the years.
 * [Notes on `DrawText` and tab stops](https://devblogs.microsoft.com/oldnewthing/20181010-00/?p=99935)
 * [Why doesn’t `GetTextExtentPoint` return the correct extent for strings containing tabs?](https://devblogs.microsoft.com/oldnewthing/20181012-00/?p=99955)
 * [Why are there trivial functions like `Copy­Rect` and `Equal­Rect`?](https://devblogs.microsoft.com/oldnewthing/20200224-00/?p=103472)
+* [More on trivial functions like `CopyRect` and `EqualRect`](https://devblogs.microsoft.com/oldnewthing/20200901-00/?p=104147)
 
 ### Brushes
 * [The hollow brush](https://devblogs.microsoft.com/oldnewthing/20040126-00/?p=40903)
@@ -774,6 +777,11 @@ written over the years.
 * [How can I write a program that monitors another window for a title change?](https://devblogs.microsoft.com/oldnewthing/20180601-00/?p=98895)
 
 ## COM
+
+### Declaring COM Interfaces
+* [The macros for declaring COM interfaces, revisited: C version](https://devblogs.microsoft.com/oldnewthing/20200909-00/?p=104198)
+* [The macros for declaring COM interfaces, revisited: C++ version](https://devblogs.microsoft.com/oldnewthing/20200910-00/?p=104203)
+* [The macros for declaring COM interfaces, revisited: C++ implementation](https://devblogs.microsoft.com/oldnewthing/20200911-00/?p=104205)
 
 ### COM Apartments
 * [The dreaded "main" threading model](https://devblogs.microsoft.com/oldnewthing/20040602-00/?p=39053)
@@ -979,6 +987,7 @@ written over the years.
 
 ## Input and Output
 
+* [Mount points, volumes, and physical drives, oh my!](https://devblogs.microsoft.com/oldnewthing/20201019-00/?p=104380)
 * [What's the difference between an asynchronous `PIPE_WAIT` pipe and a `PIPE_NOWAIT` pipe?](https://devblogs.microsoft.com/oldnewthing/20110114-00/?p=11753)
 * [Be careful when redirecting both a process's `stdin` and `stdout` to pipes, for you can easily deadlock](https://devblogs.microsoft.com/oldnewthing/20110707-00/?p=10223)
 * [Looking at the problem at the wrong level: Closing a process's `stdin`](https://devblogs.microsoft.com/oldnewthing/20110706-00/?p=10243)
@@ -986,6 +995,7 @@ written over the years.
 * [How do `FILE_FLAG_SEQUENTIAL_SCAN` and `FILE_FLAG_RANDOM_ACCESS` affect how the operating system treats my file?](https://devblogs.microsoft.com/oldnewthing/20120120-00/?p=8493)
 * [You can use an `OVERLAPPED` structure with synchronous I/O, too](https://devblogs.microsoft.com/oldnewthing/20120405-00/?p=7923)
 * [We're currently using `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH`, but we would like our `WriteFile` to go even faster](https://devblogs.microsoft.com/oldnewthing/20140306-00/?p=1583)
+* [On using `ILE_FLAG_WRITE_THROUGH` and `FILE_FLAG_NO_BUFFERING` for memory-mapped files](https://devblogs.microsoft.com/oldnewthing/20200819-00/?p=104093)
 * [Why does my synchronous overlapped `ReadFile` return `FALSE` when the end of the file is reached?](https://devblogs.microsoft.com/oldnewthing/20150121-00/?p=44863)
 * [Why does `SetFileValidData` fail even though I enabled the `SE_MANAGE_VOLUME_NAME` privilege?](https://devblogs.microsoft.com/oldnewthing/20160603-00/?p=93565)
 * [Is `GENERIC_ALL` equivalent to `GENERIC_READ | GENERIC_WRITE | GENERIC_EXECUTE`?](https://devblogs.microsoft.com/oldnewthing/20170310-00/?p=95705)
@@ -993,6 +1003,8 @@ written over the years.
 * [`CancelIoEx` can cancel synchronous I/O, which is kind of nice](https://devblogs.microsoft.com/oldnewthing/20170928-00/?p=97105)
 * [Why does `IsPathRelative` return `FALSE` for paths that are drive-relative?](https://devblogs.microsoft.com/oldnewthing/20180222-00/?p=98075)
 * [The security check happens at the acquisition of the handle](https://devblogs.microsoft.com/oldnewthing/20200320-00/?p=103579)
+* [Taking a shortcut: You can query properties from a volume, and it will forward to the physical drive](https://devblogs.microsoft.com/oldnewthing/20201022-00/?p=104391)
+* [https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395](https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395)
 
 ### Asynchronous Input and Output
 * [Developing the method for taking advantage of the fact that the `OVERLAPPED` associated with asynchronous I/O is passed by address](https://devblogs.microsoft.com/oldnewthing/20101220-01/?p=11963)
@@ -1025,6 +1037,8 @@ written over the years.
 * [Why does a non-recursive `Read­Directory­ChangesW` still report files created inside subdirectories?](https://devblogs.microsoft.com/oldnewthing/20180712-00/?p=99225)
 * [The early history of Windows file attributes, and why there is a gap between System and Directory](https://devblogs.microsoft.com/oldnewthing/20180830-00/?p=99615)
 * [Even if you open a file with GUID, you can still get its name, or at least one of its names](https://devblogs.microsoft.com/oldnewthing/20190410-00/?p=102408) (`GetFinalPathNameByHandle()`)
+* [How do I get from a file path to the volume that holds it?](https://devblogs.microsoft.com/oldnewthing/20201020-00/?p=104385)
+* [How do I get from a volume to the physical disk that holds it?](https://devblogs.microsoft.com/oldnewthing/20201021-00/?p=104387)
 
 ### ACL
 * [The `MoveSecurityAttributes` policy affects only how Explorer recalculates ACLs when a file is moved; everybody else is on their own](https://devblogs.microsoft.com/oldnewthing/20151014-00/?p=91361)
@@ -1056,9 +1070,14 @@ written over the years.
 * [Why doesn’t `RegSetKeySecurity` propagate inheritable ACEs, but `SetSecurityInfo` does?](https://devblogs.microsoft.com/oldnewthing/20200102-00/?p=103287)
 * [Why does `Reg­Notify­Change­Key­Value` stop notifying once the key is deleted?](https://devblogs.microsoft.com/oldnewthing/20200507-00/?p=103733)
 
-## Locale
+## Strings and Locales
 
+* [`TEXT` vs. `_TEXT` vs. `_T`, and `UNICODE` vs. `_UNICODE`](https://devblogs.microsoft.com/oldnewthing/20040212-00/?p=40643)
+* [The sad history of Unicode `printf`-style format specifiers in Visual C++](https://devblogs.microsoft.com/oldnewthing/20190830-00/?p=102823)
 * [Nasty gotcha: `SetThreadUILanguage` cannot be used to restore the thread UI language](https://devblogs.microsoft.com/oldnewthing/20170908-00/?p=96965)
+* [How can `CharUpper` and `CharLower` guarantee that the uppercase version of a string is the same length as the lowercase version?](https://devblogs.microsoft.com/oldnewthing/20200804-00/?p=104040) (use `LCMapStringEx()` in any new code)
+* [Is there a code page that matches ASCII and can round trip arbitrary bytes through Unicode?](https://devblogs.microsoft.com/oldnewthing/20200831-00/?p=104142)
+* [A consequence of being the first to adopt a standard is that you may end up being the only one to adopt it: The sad story of Korean jamo](https://devblogs.microsoft.com/oldnewthing/20201009-00/?p=104351)
 
 ## NT Services
 
@@ -1071,7 +1090,6 @@ written over the years.
 * [How do I determine the processor's cache line size?](https://devblogs.microsoft.com/oldnewthing/20091208-01/?p=15733) (`GetLogicalProcessorInformation()`)
 * [Why are structure sizes checked strictly?](https://devblogs.microsoft.com/oldnewthing/20031212-00/?p=41523)
 * [What's the difference between `CreateMenu` and `CreatePopupMenu`?](https://devblogs.microsoft.com/oldnewthing/20031230-00/?p=41273)
-* [`TEXT` vs. `_TEXT` vs. `_T`, and `UNICODE` vs. `_UNICODE`](https://devblogs.microsoft.com/oldnewthing/20040212-00/?p=40643)
 * [Why are `HANDLE` return values so inconsistent?](https://devblogs.microsoft.com/oldnewthing/20040302-00/?p=40443)
 * [How to retrieve text under the cursor (mouse pointer)](https://devblogs.microsoft.com/oldnewthing/20040423-00/?p=39663)
 * [How to detect programmatically whether you are running on 64-bit Windows](https://devblogs.microsoft.com/oldnewthing/20050201-00/?p=36553)
@@ -1092,9 +1110,10 @@ written over the years.
 * [How do I obtain the comment for a share?](https://devblogs.microsoft.com/oldnewthing/20151005-00/?p=91441)
 * [How accurate are the various Windows time-querying functions?](https://devblogs.microsoft.com/oldnewthing/20170921-00/?p=97057)
 * [How can I detect whether the user is logging off?](https://devblogs.microsoft.com/oldnewthing/20180705-00/?p=99175)
-* [The sad history of Unicode `printf`-style format specifiers in Visual C++](https://devblogs.microsoft.com/oldnewthing/20190830-00/?p=102823)
 * [Why are timer IDs and dialog control IDs 64-bit values on 64-bit Windows? Did you really expect people to create more than 4 billion timers or dialog controls?](https://devblogs.microsoft.com/oldnewthing/20191010-00/?p=102978)
 * [If you suppress GDI+ background thread, then you are expected to pump messages yourself](https://devblogs.microsoft.com/oldnewthing/20191029-00/?p=103033)
 * [If one program blocks shutdown, then *all* programs block shutdown](https://devblogs.microsoft.com/oldnewthing/20200414-00/?p=103671) (`WM_QUERY­END­SESSION`, `WM_END­SESSION`)
 * [When I ask the `GetIpAddrTable` function to sort the results, how are they sorted?](https://devblogs.microsoft.com/oldnewthing/20200415-00/?p=103673)
 * [How can I detect that the system is no longer showing a UAC prompt?](https://devblogs.microsoft.com/oldnewthing/20200429-00/?p=103715) (`EVENT_SYSTEM_DESKTOP­SWITCH`)
+* [How can I get the number of processors in the system, when there are more than 64?](https://devblogs.microsoft.com/oldnewthing/20200824-00/?p=104116)
+* [Why are some system functions exported as stubs instead as forwarders?](https://devblogs.microsoft.com/oldnewthing/20200826-00/?p=104125)
