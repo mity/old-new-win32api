@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-October_23,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-December_12,_2020-brightgreen)
 
 # The Old New Win32API
 
@@ -110,6 +110,7 @@ written over the years.
   * [`IFileDialog`](#ifiledialog)
   * [`IMultiLanguage`](#imultilanguage)
   * [`INamespaceWalk`](#inamespacewalk)
+  * [`IVirtual­Desktop­Manager`](#ivirtual­desktop­manager)
   * [Clipboard](#clipboard)
   * [Drag and Drop](#drag-and-drop)
   * [Enumeration](#enumeration)
@@ -386,6 +387,7 @@ written over the years.
 * [Safer subclassing](https://devblogs.microsoft.com/oldnewthing/20031111-00/?p=41883)
 * [Private classes, superclassing, and global subclassing](https://devblogs.microsoft.com/oldnewthing/20100215-00/?p=14943)
 * [What makes `RealGetWindowClass` so much more real than `GetClassName`?](https://devblogs.microsoft.com/oldnewthing/20101231-00/?p=11863)
+* [Why does `CreateWindowEx` take the extended style parameter as its first parameter instead of its last?](https://devblogs.microsoft.com/oldnewthing/20201207-00/?p=104518)
 
 ## Top-Level Windows
 
@@ -794,6 +796,7 @@ written over the years.
 * [What do the output values from `CoGetApartmentType` mean?](https://devblogs.microsoft.com/oldnewthing/20180208-00/?p=97986)
 * [User interface code + multi-threaded apartment = death](https://devblogs.microsoft.com/oldnewthing/?p=22603)
 * [Other problems traced to violating COM single-threaded apartment rules in the shell](https://devblogs.microsoft.com/oldnewthing/20071019-00/?p=24733)
+* [What’s the point of `APTTYPE_CURRENT`? I mean, of course I’m current.](https://devblogs.microsoft.com/oldnewthing/20201105-00/?p=104422)
 
 ### COM Initialization
 * [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](https://devblogs.microsoft.com/oldnewthing/20121108-00/?p=6143)
@@ -871,6 +874,9 @@ written over the years.
 * [How can I control which parts of the shell namespace the `INamespaceWalk::Walk` operation will walk into?](https://devblogs.microsoft.com/oldnewthing/20171108-00/?p=97365)
 * [How can I cancel the `INamespace­Walk::Walk` operation?](https://devblogs.microsoft.com/oldnewthing/20171109-00/?p=97375)
 * [Cancelling the `INamespace­Walk::Walk` operation a little faster](https://devblogs.microsoft.com/oldnewthing/20171110-00/?p=97385)
+
+### `IVirtual­Desktop­Manager`
+* [Virtual desktops are an end-user window management feature, not a programmatic one](https://devblogs.microsoft.com/oldnewthing/20201123-00/?p=104476)
 
 ### Clipboard
 * [What happens when applications try to copy text by sending `Ctrl+C`](https://devblogs.microsoft.com/oldnewthing/20110623-00/?p=10353)
@@ -1034,6 +1040,7 @@ written over the years.
 * [How long do I have to keep the `SECURITY_ATTRIBUTES` and `SECURITY_DESCRIPTOR` structures valid after using them to create a file?](https://devblogs.microsoft.com/oldnewthing/20160520-00/?p=93497)
 * [How do I create a directory where people can create subdirectories but cannot mess with those created by other users?](https://devblogs.microsoft.com/oldnewthing/20160524-00/?p=93515)
 * [How can I tell whether a file is on a removable drive, a fixed drive, or a remote drive?](https://devblogs.microsoft.com/oldnewthing/20160602-00/?p=93556)
+* [How can I tell whether a file is on an SSD?](https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395)
 * [Why does a non-recursive `Read­Directory­ChangesW` still report files created inside subdirectories?](https://devblogs.microsoft.com/oldnewthing/20180712-00/?p=99225)
 * [The early history of Windows file attributes, and why there is a gap between System and Directory](https://devblogs.microsoft.com/oldnewthing/20180830-00/?p=99615)
 * [Even if you open a file with GUID, you can still get its name, or at least one of its names](https://devblogs.microsoft.com/oldnewthing/20190410-00/?p=102408) (`GetFinalPathNameByHandle()`)
@@ -1059,6 +1066,7 @@ written over the years.
 * [Is a SID with zero subauthorities a valid SID? It depends whom you ask](https://devblogs.microsoft.com/oldnewthing/?p=45231)
 * [What’s the difference between duplicating the handle to a token and duplicating a token?](https://devblogs.microsoft.com/oldnewthing/20160511-00/?p=93446)
 * [I called `AdjustTokenPrivileges`, but I was still told that a necessary privilege was not held](https://devblogs.microsoft.com/oldnewthing/20190531-00/?p=102532)
+* [The history of the `EncodePointer` function for obfuscating pointers](https://devblogs.microsoft.com/oldnewthing/20201113-00/?p=104447)
 
 ## Registry
 
@@ -1117,3 +1125,4 @@ written over the years.
 * [How can I detect that the system is no longer showing a UAC prompt?](https://devblogs.microsoft.com/oldnewthing/20200429-00/?p=103715) (`EVENT_SYSTEM_DESKTOP­SWITCH`)
 * [How can I get the number of processors in the system, when there are more than 64?](https://devblogs.microsoft.com/oldnewthing/20200824-00/?p=104116)
 * [Why are some system functions exported as stubs instead as forwarders?](https://devblogs.microsoft.com/oldnewthing/20200826-00/?p=104125)
+* [How can I check whether the user has disconnected from the session?](https://devblogs.microsoft.com/oldnewthing/20201202-00/?p=104504)
