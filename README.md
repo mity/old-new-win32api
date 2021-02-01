@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-December_12,_2020-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-January_31,_2021-brightgreen)
 
 # The Old New Win32API
 
@@ -127,6 +127,7 @@ written over the years.
 * [NT Services](#nt-services)
 * [Uncategorized](#uncategorized)
 
+
 ## Processes and Threads
 
 ### Processes
@@ -157,6 +158,7 @@ written over the years.
 * [Is the `Terminate­Thread` function synchronous?](https://devblogs.microsoft.com/oldnewthing/20180727-00/?p=99355)
 * [Removing the `Terminate­Thread` from code that waits for a job object to empty](https://devblogs.microsoft.com/oldnewthing/20180831-00/?p=99625)
 * [What is the point of `FreeLibraryAndExitThread`?](https://devblogs.microsoft.com/oldnewthing/20131105-00/?p=2733)
+* [What happens if I give contradictory values for the stack commit and stack reserve?](https://devblogs.microsoft.com/oldnewthing/20210107-00/?p=104680)
 
 ### Thread Pools
 * [What exactly does the `msWindowLength` parameter to `SetThreadpoolTimer` mean?](https://devblogs.microsoft.com/oldnewthing/20160914-00/?p=94315)
@@ -166,6 +168,7 @@ written over the years.
 * [Avoiding deadlocks when cancelling a thread pool callback, part 2: Referring back to the containing object](https://devblogs.microsoft.com/oldnewthing/20180504-00/?p=98675)
 * [Gotcha: A threadpool periodic timer will not wait for the previous tick to complete](https://devblogs.microsoft.com/oldnewthing/20200217-00/?p=103441)
 * [Why am I getting an exception from the thread pool during process shutdown?](https://devblogs.microsoft.com/oldnewthing/20200130-00/?p=103385)
+* [What happens to the value returned from the function passed to `Queue­User­Work­Item`?](https://devblogs.microsoft.com/oldnewthing/20210121-00/?p=104746)
 
 ### Thread Affinity of Objects
 * [Thread affinity of user interface objects, part 1: Window handles](https://devblogs.microsoft.com/oldnewthing/20051010-09/?p=33843)
@@ -231,6 +234,7 @@ written over the years.
 * [Lock free many-producer/single-consumer patterns: A work queue of distinct events, FIFO](https://devblogs.microsoft.com/oldnewthing/20161125-00/?p=94795)
 * [Lock free many-producer/single-consumer patterns: A work queue of distinct events, order not important, follow-up question](https://devblogs.microsoft.com/oldnewthing/20180627-00/?p=99105)
 
+
 ## DLLs
 
 * [Don't trust the return address](https://devblogs.microsoft.com/oldnewthing/20040101-00/?p=41223)
@@ -263,6 +267,7 @@ written over the years.
 * [The thread that gets the `DLL_PROCESS_DETACH` notification is not necessarily the one that got the `DLL_PROCESS_ATTACH notification`](https://devblogs.microsoft.com/oldnewthing/20090626-00/?p=17733)
 * [How you might be loading a DLL during `DLL_PROCESS_DETACH` without even realizing it](https://devblogs.microsoft.com/oldnewthing/20100115-00/?p=15253)
 * [When `DLL_PROCESS_DETACH` tells you that the process is exiting, your best bet is just to return without doing anything](https://devblogs.microsoft.com/oldnewthing/20120105-00/?p=8683)
+
 
 ## Resources
 
@@ -308,6 +313,7 @@ written over the years.
 ### Data and Custom Resources
 * [The format of data and custom resources](https://devblogs.microsoft.com/oldnewthing/20130828-00/?p=3383)
 
+
 ## Application (as a whole)
 
 * [Which windows appear in the `Alt+Tab` list?](https://devblogs.microsoft.com/oldnewthing/20071008-00/?p=24863)
@@ -337,6 +343,7 @@ written over the years.
 * [How did that program manage to pin itself to my taskbar when I installed it?](https://devblogs.microsoft.com/oldnewthing/20141230-00/?p=43273)
 * [What if I have two programs that are logically a single application, and I want them to be treated as a single group on the taskbar?](https://devblogs.microsoft.com/oldnewthing/20150810-00/?p=91141)
 * [Why does the taskbar icon for grouped windows change to something weird?](https://devblogs.microsoft.com/oldnewthing/20150812-00/?p=91831)
+
 
 ## `HWND` (General Point of View)
 
@@ -388,6 +395,7 @@ written over the years.
 * [Private classes, superclassing, and global subclassing](https://devblogs.microsoft.com/oldnewthing/20100215-00/?p=14943)
 * [What makes `RealGetWindowClass` so much more real than `GetClassName`?](https://devblogs.microsoft.com/oldnewthing/20101231-00/?p=11863)
 * [Why does `CreateWindowEx` take the extended style parameter as its first parameter instead of its last?](https://devblogs.microsoft.com/oldnewthing/20201207-00/?p=104518)
+
 
 ## Top-Level Windows
 
@@ -468,6 +476,7 @@ written over the years.
 * [Managing the UI state of accelerators and focus rectangles](https://devblogs.microsoft.com/oldnewthing/20050503-00/?p=35723)
 * [Custom navigation in dialog boxes, redux](https://devblogs.microsoft.com/oldnewthing/20100222-00/?p=14863)
 * [Dialog boxes return focus to the control that had focus when you last switched away; how do I get in on that action for my own windows?](https://devblogs.microsoft.com/oldnewthing/20140521-00/?p=943)
+* [How can I create a non-circular tab order, or some other type of custom ordering in my Win32 dialog?](https://devblogs.microsoft.com/oldnewthing/20201231-00/?p=104627)
 
 ### Dialog Manager
 * [The dialog manager, part 1: Warm-ups](https://devblogs.microsoft.com/oldnewthing/20050329-00/?p=36043)
@@ -499,6 +508,7 @@ written over the years.
 * [`PSM_ISDIALOGMESSAGE` is to modeless property sheets as `IsDialogMessage` is to modeless dialog boxes](https://devblogs.microsoft.com/oldnewthing/20100309-00/?p=14673)
 * [You can extend the `PROPSHEETPAGE` structure with your own bonus data](https://devblogs.microsoft.com/oldnewthing/20110318-00/?p=11183)
 * [The `PSN_SETACTIVE` notification is sent each time your wizard page is activated](https://devblogs.microsoft.com/oldnewthing/20111021-00/?p=9323)
+
 
 ## Controls
 
@@ -559,6 +569,11 @@ written over the years.
 * [There are two types of scrollbars](https://devblogs.microsoft.com/oldnewthing/20040510-00/?p=39413)
 * [Why was `WHEEL_DELTA` chosen to be 120 instead of a much more convenient value like 100 or even 10?](https://devblogs.microsoft.com/oldnewthing/20130123-00/?p=5473)
 * [Why does setting the horizontal scroll bar range for the first time also set the vertical range, and vice versa?](https://devblogs.microsoft.com/oldnewthing/20160727-00/?p=93965)
+* [Autoscrolling on drag, part 1: Basic implementation](https://devblogs.microsoft.com/oldnewthing/20210125-00/?p=104757)
+* [Autoscrolling on drag, part 2: Why does scrolling go faster if I wiggle the mouse?](https://devblogs.microsoft.com/oldnewthing/20210126-00/?p=104759)
+* [Autoscrolling on drag, part 3: Dynamic autoscroll based on mouse position](https://devblogs.microsoft.com/oldnewthing/20210127-00/?p=104764)
+* [Autoscrolling on drag, part 4: Dynamic autoscroll based on escape velocity](https://devblogs.microsoft.com/oldnewthing/20210128-00/?p=104768)
+* [Autoscrolling on drag, part 5: Adding wiggle-to-scroll to escape velocity](https://devblogs.microsoft.com/oldnewthing/20210129-00/?p=104773)
 
 ### Static Controls
 * [When will the static control automatically delete the image loaded into it, and when is it the responsibility of the application?](https://devblogs.microsoft.com/oldnewthing/20140219-00/?p=1713)
@@ -595,6 +610,7 @@ written over the years.
 * [Tree view check boxes: A sordid history](https://devblogs.microsoft.com/oldnewthing/20171204-00/?p=97515)
 * [Tree view check boxes: The extended check box states](https://devblogs.microsoft.com/oldnewthing/20171205-00/?p=97525)
 
+
 ## Processing of Messages
 
 * [Which message numbers belong to whom?](https://devblogs.microsoft.com/oldnewthing/20031202-00/?p=41653)
@@ -627,6 +643,7 @@ written over the years.
 * [How can I get notified when the cursor changes?](https://devblogs.microsoft.com/oldnewthing/20151116-00/?p=92091)
 * [What does the thread parameter to `Set­Windows­Hook­Ex` actually mean?](https://devblogs.microsoft.com/oldnewthing/20180926-00/?p=99825)
 * [Why does `SetFocus` fail without telling me why?](https://devblogs.microsoft.com/oldnewthing/20190614-00/?p=102593)
+
 
 ## Specific Messages
 
@@ -769,6 +786,7 @@ written over the years.
 * [How do I get the color depth of the screen?](https://devblogs.microsoft.com/oldnewthing/20101013-00/?p=12543)
 * [How does the window manager adjust `ptMaxSize` and `ptMaxPosition` for multiple monitors?](https://devblogs.microsoft.com/oldnewthing/20150501-00/?p=44964)
 
+
 ## Accessibility
 
 * [Accessibility is not just for people with disabilities](https://devblogs.microsoft.com/oldnewthing/?p=30093)
@@ -777,6 +795,8 @@ written over the years.
 * [How can I get notified when some other window is destroyed?](https://devblogs.microsoft.com/oldnewthing/20111026-00/?p=9263)
 * [Using accessibility to monitor windows as they come and go](https://devblogs.microsoft.com/oldnewthing/20130325-00/?p=4863)
 * [How can I write a program that monitors another window for a title change?](https://devblogs.microsoft.com/oldnewthing/20180601-00/?p=98895)
+* [How can I write a program that monitors another window for a change in size or position?](https://devblogs.microsoft.com/oldnewthing/20210104-00/?p=104656)
+
 
 ## COM
 
@@ -840,6 +860,7 @@ written over the years.
 * [COM object destructors are very sensitive functions](https://devblogs.microsoft.com/oldnewthing/20050927-13/?p=34023)
 * [Avoiding double-destruction when an object is released](https://devblogs.microsoft.com/oldnewthing/20050928-10/?p=34013)
 * [The COM interface contract rules exist for a reason](https://devblogs.microsoft.com/oldnewthing/20051101-54/?p=33533)
+* [I’d like an `IUnknown`, I know you have many, I’ll take any of them](https://devblogs.microsoft.com/oldnewthing/20210101-00/?p=104639)
 
 ### `IMoniker`
 * [Pidls and monikers do roughly the same thing, just backwards](https://devblogs.microsoft.com/oldnewthing/20060712-17/?p=30543)
@@ -966,6 +987,8 @@ written over the years.
 * [How can I detect that a shell item refers to a virtual folder, or to a file system inside a file?](https://devblogs.microsoft.com/oldnewthing/20171101-00/?p=97325)
 * [Why is there a limit of 15 shell icon overlays?](https://devblogs.microsoft.com/oldnewthing/20190313-00/?p=101094)
 * [The case of the `SHGet­Folder­Path(CSIDL_COMMON_DOCUMENTS)` that returned `ERROR_PATH_NOT_FOUND`](https://devblogs.microsoft.com/oldnewthing/20200520-00/?p=103775)
+* [Why is the `HSHELL_WINDOWDESTROYED` notification raised when a window is hidden, even if it hasn’t been destroyed?](https://devblogs.microsoft.com/oldnewthing/20201228-00/?p=104610)
+* [Why am I receiving `HCNE_UPDATEDIR` notifications that my code never generates?](https://devblogs.microsoft.com/oldnewthing/20210112-00/?p=104707)
 
 ### Uncategorized COM Stuff
 * [The macros for declaring and implementing COM interfaces](https://devblogs.microsoft.com/oldnewthing/20041005-00/?p=37653)
@@ -983,6 +1006,8 @@ written over the years.
 * [The sad implementation history of COM component categories and why it means you have to click twice to see your newly-installed taskbar toolbar](https://devblogs.microsoft.com/oldnewthing/20171121-00/?p=97435)
 * [How do I request that my out-of-process COM server run unelevated?](https://devblogs.microsoft.com/oldnewthing/20180905-00/?p=99655)
 * [How can a desktop app use a Windows Runtime object that infers UI context from its thread? The `IInitializeWithWindow` pattern](https://devblogs.microsoft.com/oldnewthing/20190412-00/?p=102413) (`IInitialize­With­Window`)
+* [How do I protect myself against a COM call that can hang? I’m already running the server out-of-process.](https://devblogs.microsoft.com/oldnewthing/20210122-00/?p=104750)
+
 
 ## Memory
 
@@ -990,6 +1015,7 @@ written over the years.
 * [Creating a shared memory block that can grow in size](https://devblogs.microsoft.com/oldnewthing/20150130-00/?p=44793)
 * [Why do I have to pass a valid page protection value to `VirtualAlloc` even if it ignores it?](https://devblogs.microsoft.com/oldnewthing/20171227-00/?p=97656)
 * [How can I include/exclude specific memory blocks in user-mode crash dumps?](https://devblogs.microsoft.com/oldnewthing/20181011-00/?p=99945)
+
 
 ## Input and Output
 
@@ -1011,6 +1037,7 @@ written over the years.
 * [The security check happens at the acquisition of the handle](https://devblogs.microsoft.com/oldnewthing/20200320-00/?p=103579)
 * [Taking a shortcut: You can query properties from a volume, and it will forward to the physical drive](https://devblogs.microsoft.com/oldnewthing/20201022-00/?p=104391)
 * [https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395](https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395)
+* [How do I disassociate a thread from an I/O completion port?](https://devblogs.microsoft.com/oldnewthing/20210120-00/?p=104740)
 
 ### Asynchronous Input and Output
 * [Developing the method for taking advantage of the fact that the `OVERLAPPED` associated with asynchronous I/O is passed by address](https://devblogs.microsoft.com/oldnewthing/20101220-01/?p=11963)
@@ -1051,6 +1078,7 @@ written over the years.
 * [The `MoveSecurityAttributes` policy affects only how Explorer recalculates ACLs when a file is moved; everybody else is on their own](https://devblogs.microsoft.com/oldnewthing/20151014-00/?p=91361)
 * [How to create a folder that inherits its parent’s ACL, and then overrides part of it](https://devblogs.microsoft.com/oldnewthing/20170223-00/?p=95545)
 
+
 ## Security Permissions, Attributes and Identifiers
 
 * [The security check happens at the acquisition of the handle](https://devblogs.microsoft.com/oldnewthing/20200320-00/?p=103579)
@@ -1067,6 +1095,9 @@ written over the years.
 * [What’s the difference between duplicating the handle to a token and duplicating a token?](https://devblogs.microsoft.com/oldnewthing/20160511-00/?p=93446)
 * [I called `AdjustTokenPrivileges`, but I was still told that a necessary privilege was not held](https://devblogs.microsoft.com/oldnewthing/20190531-00/?p=102532)
 * [The history of the `EncodePointer` function for obfuscating pointers](https://devblogs.microsoft.com/oldnewthing/20201113-00/?p=104447)
+* [Additional helpful pseudo-handles: The process token, the thread token, and the effective token](https://devblogs.microsoft.com/oldnewthing/20210105-00/?p=104667)
+* [How can I tell whether my process is running as SYSTEM?](https://devblogs.microsoft.com/oldnewthing/20210106-00/?p=104669)
+
 
 ## Registry
 
@@ -1077,6 +1108,12 @@ written over the years.
 * [How can I programmatically inspect and manipulate a registry hive file without mounting it?](https://devblogs.microsoft.com/oldnewthing/20181015-00/?p=99975)
 * [Why doesn’t `RegSetKeySecurity` propagate inheritable ACEs, but `SetSecurityInfo` does?](https://devblogs.microsoft.com/oldnewthing/20200102-00/?p=103287)
 * [Why does `Reg­Notify­Change­Key­Value` stop notifying once the key is deleted?](https://devblogs.microsoft.com/oldnewthing/20200507-00/?p=103733)
+* [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 1](https://devblogs.microsoft.com/oldnewthing/20201221-00/?p=104574)
+* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 2](https://devblogs.microsoft.com/oldnewthing/20201222-00/?p=104582)
+* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 3](https://devblogs.microsoft.com/oldnewthing/20201223-00/?p=104584)
+* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 4](https://devblogs.microsoft.com/oldnewthing/20201224-00/?p=104599)
+* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 5](https://devblogs.microsoft.com/oldnewthing/20201225-00/?p=104602)
+
 
 ## Strings and Locales
 
@@ -1087,11 +1124,13 @@ written over the years.
 * [Is there a code page that matches ASCII and can round trip arbitrary bytes through Unicode?](https://devblogs.microsoft.com/oldnewthing/20200831-00/?p=104142)
 * [A consequence of being the first to adopt a standard is that you may end up being the only one to adopt it: The sad story of Korean jamo](https://devblogs.microsoft.com/oldnewthing/20201009-00/?p=104351)
 
+
 ## NT Services
 
 * [Calling `ShutdownBlockReasonCreate` from my service doesn't stop the user from shutting down](https://devblogs.microsoft.com/oldnewthing/20151002-00/?p=91461)
 * [What does it mean when my attempt to stop a Windows NT service fails with `ERROR_BROKEN_PIPE`?](https://devblogs.microsoft.com/oldnewthing/20190405-00/?p=102389)
 * [How can I configure my Windows NT service to autostart when the system gains Internet access?](https://devblogs.microsoft.com/oldnewthing/20200227-00/?p=103494)
+
 
 ## Uncategorized
 
@@ -1126,3 +1165,4 @@ written over the years.
 * [How can I get the number of processors in the system, when there are more than 64?](https://devblogs.microsoft.com/oldnewthing/20200824-00/?p=104116)
 * [Why are some system functions exported as stubs instead as forwarders?](https://devblogs.microsoft.com/oldnewthing/20200826-00/?p=104125)
 * [How can I check whether the user has disconnected from the session?](https://devblogs.microsoft.com/oldnewthing/20201202-00/?p=104504)
+* [Why does `PF_VIRT_FIRMWARE_ENABLED` return false even when virtualization is enabled in the firmware?](https://devblogs.microsoft.com/oldnewthing/20201216-00/?p=104550)
