@@ -1122,10 +1122,10 @@ written over the years.
 * [Why doesn’t `RegSetKeySecurity` propagate inheritable ACEs, but `SetSecurityInfo` does?](https://devblogs.microsoft.com/oldnewthing/20200102-00/?p=103287)
 * [Why does `Reg­Notify­Change­Key­Value` stop notifying once the key is deleted?](https://devblogs.microsoft.com/oldnewthing/20200507-00/?p=103733)
 * [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 1](https://devblogs.microsoft.com/oldnewthing/20201221-00/?p=104574)
-* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 2](https://devblogs.microsoft.com/oldnewthing/20201222-00/?p=104582)
-* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 3](https://devblogs.microsoft.com/oldnewthing/20201223-00/?p=104584)
-* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 4](https://devblogs.microsoft.com/oldnewthing/20201224-00/?p=104599)
-* [How can I emulate `the REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 5](https://devblogs.microsoft.com/oldnewthing/20201225-00/?p=104602)
+* [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 2](https://devblogs.microsoft.com/oldnewthing/20201222-00/?p=104582)
+* [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 3](https://devblogs.microsoft.com/oldnewthing/20201223-00/?p=104584)
+* [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 4](https://devblogs.microsoft.com/oldnewthing/20201224-00/?p=104599)
+* [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 5](https://devblogs.microsoft.com/oldnewthing/20201225-00/?p=104602)
 
 
 ## Strings and Locales
