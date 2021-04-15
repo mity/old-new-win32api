@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-January_31,_2021-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-April_14,_2021-brightgreen)
 
 # The Old New Win32API
 
@@ -99,6 +99,7 @@ written over the years.
   * [Declaring COM Interfaces](#declaring-com-interfaces)
   * [COM Apartments](#com-apartments)
   * [COM Initialization](#com-initialization)
+  * [COM Static Store](#com-static-store)
   * [COM Marshaling](#com-marshaling)
   * [COM Error Handling](#com-error-handling)
   * [GUIDs](#guids)
@@ -817,10 +818,21 @@ written over the years.
 * [User interface code + multi-threaded apartment = death](https://devblogs.microsoft.com/oldnewthing/?p=22603)
 * [Other problems traced to violating COM single-threaded apartment rules in the shell](https://devblogs.microsoft.com/oldnewthing/20071019-00/?p=24733)
 * [What’s the point of `APTTYPE_CURRENT`? I mean, of course I’m current.](https://devblogs.microsoft.com/oldnewthing/20201105-00/?p=104422)
+* [How do I get a foothold in the neutral apartment?](https://devblogs.microsoft.com/oldnewthing/20210205-00/?p=104801)
+* [What is so special about the Application STA?](https://devblogs.microsoft.com/oldnewthing/20210224-00/?p=104901)
+* [What does it mean when a call fails with `0x8000001F = RO_E_BLOCKED_CROSS_ASTA_CALL`?](https://devblogs.microsoft.com/oldnewthing/20210225-00/?p=104908)
 
 ### COM Initialization
 * [What does the `COINIT_SPEED_OVER_MEMORY` flag to `CoInitializeEx` do?](https://devblogs.microsoft.com/oldnewthing/20121108-00/?p=6143)
 * [Crashing in COM after I call `CoUninitialize`, how can COM be running after it is uninitalized?](https://devblogs.microsoft.com/oldnewthing/20200129-00/?p=103380)
+
+### COM Static Store
+* [The COM static store, part 1: Introduction](https://devblogs.microsoft.com/oldnewthing/20210208-00/?p=104812)
+* [The COM static store, part 2: Race conditions in setting a singleton](https://devblogs.microsoft.com/oldnewthing/20210209-00/?p=104835)
+* [The COM static store, part 3: Avoiding creation of an expensive temporary when setting a singleton](https://devblogs.microsoft.com/oldnewthing/20210210-06/?p=104839)
+* [The COM static store, part 4: Aggregating into a single object](https://devblogs.microsoft.com/oldnewthing/20210211-00/?p=104845)
+* [The COM static store, part 5: Using COM weak references](https://devblogs.microsoft.com/oldnewthing/20210212-00/?p=104847)
+* [The COM static store, part 6: Using C++ weak references](https://devblogs.microsoft.com/oldnewthing/20210215-00/?p=104865)
 
 ### COM Marshaling
 * [What is COM marshaling and how do I use it?](https://devblogs.microsoft.com/oldnewthing/20151020-00/?p=91321)
@@ -835,6 +847,7 @@ written over the years.
 * [Why does COM require output pointers to be initialized even on failure?](https://devblogs.microsoft.com/oldnewthing/20091231-00/?p=15463)
 * [How do I convert an `HRESULT` to a Win32 error code?](https://devblogs.microsoft.com/oldnewthing/20061103-07/?p=29133)
 * [Do not overload the `E_NOINTERFACE` error](https://devblogs.microsoft.com/oldnewthing/20061208-00/?p=28783)
+* [What does it mean when a call fails with `0x8000001F = RO_E_BLOCKED_CROSS_ASTA_CALL`?](https://devblogs.microsoft.com/oldnewthing/20210225-00/?p=104908)
 
 ### GUIDs
 * [What's the difference between `UuidFromString`, `IIDFromString`, `CLSIDFromString`, `GUIDFromString`...](https://devblogs.microsoft.com/oldnewthing/20151015-00/?p=91351)
