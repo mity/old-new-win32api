@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-April_14,_2021-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-January_6,_2022-brightgreen)
 
 # The Old New Win32API
 
@@ -87,8 +87,10 @@ written over the years.
   * [Other Window Messages](#other-window-messages)
   * [System Messages](#system-messages)
 * [GDI](#gdi)
+  * [Cursors](#cursors)
   * [Brushes](#brushes)
   * [Pens](#pens)
+  * [Bitmaps](#bitmaps)
   * [DIB](#dib)
   * [`LockWindowUpdate()`](#lockwindowupdate)
   * [Painting Standard Elements](#painting-standard-elements)
@@ -107,10 +109,12 @@ written over the years.
   * [COM Variants](#com-variants)
   * [`IUnknown`](#iunknown)
   * [`IMoniker`](#imoniker)
+  * [`ICallback`](#icallback)
   * [`IContextMenu`](#icontextmenu)
   * [`IFileDialog`](#ifiledialog)
   * [`IMultiLanguage`](#imultilanguage)
   * [`INamespaceWalk`](#inamespacewalk)
+  * [`IStream`](#istream)
   * [`IVirtual­Desktop­Manager`](#ivirtual­desktop­manager)
   * [Clipboard](#clipboard)
   * [Drag and Drop](#drag-and-drop)
@@ -170,6 +174,8 @@ written over the years.
 * [Gotcha: A threadpool periodic timer will not wait for the previous tick to complete](https://devblogs.microsoft.com/oldnewthing/20200217-00/?p=103441)
 * [Why am I getting an exception from the thread pool during process shutdown?](https://devblogs.microsoft.com/oldnewthing/20200130-00/?p=103385)
 * [What happens to the value returned from the function passed to `Queue­User­Work­Item`?](https://devblogs.microsoft.com/oldnewthing/20210121-00/?p=104746)
+* [The mental model for `StartThreadpoolIo`](https://devblogs.microsoft.com/oldnewthing/20211117-00/?p=105933)
+
 
 ### Thread Affinity of Objects
 * [Thread affinity of user interface objects, part 1: Window handles](https://devblogs.microsoft.com/oldnewthing/20051010-09/?p=33843)
@@ -260,6 +266,8 @@ written over the years.
 * [How can I specify that my DLL should resolve a DLL dependency from the same directory that the DLL is in?](https://devblogs.microsoft.com/oldnewthing/20171011-00/?p=97195)
 * [After I made my DLL delay-load another DLL, my DLL has started crashing in its process detach code](https://devblogs.microsoft.com/oldnewthing/20190718-00/?p=102719)
 * [The different kinds of DLL planting](https://devblogs.microsoft.com/oldnewthing/20191231-00/?p=103282)
+* [Why does `GetModuleInfo` fail to produce an entry point for executables?](https://devblogs.microsoft.com/oldnewthing/20211014-00/?p=105800)
+* [What does the `SizeOfImage` mean in the `MODULEINFO` structure?](https://devblogs.microsoft.com/oldnewthing/20211015-00/?p=105802)
 
 ### `DllMain()`
 * [Some reasons not to do anything scary in your `DllMain`](https://devblogs.microsoft.com/oldnewthing/20040127-00/?p=40873)
@@ -280,12 +288,14 @@ written over the years.
 * [Horrifically nasty gotcha: `FindResource` and `FindResourceEx`](https://devblogs.microsoft.com/oldnewthing/20150101-00/?p=43243)
 
 ### Bitmap and Icon Resources
+* [Why are device-independent bitmaps upside down?](https://devblogs.microsoft.com/oldnewthing/20210525-00/?p=105250)
 * [The format of bitmap resources](https://devblogs.microsoft.com/oldnewthing/20091211-00/?p=15693)
 * [The format of icon resources](https://devblogs.microsoft.com/oldnewthing/20120720-00/?p=7083)
 * [The evolution of the ICO file format, part 1: Monochrome beginnings](https://devblogs.microsoft.com/oldnewthing/20101018-00/?p=12513)
 * [The evolution of the ICO file format, part 2: Now in color!](https://devblogs.microsoft.com/oldnewthing/20101019-00/?p=12503)
 * [The evolution of the ICO file format, part 3: Alpha-blended images](https://devblogs.microsoft.com/oldnewthing/20101021-00/?p=12483)
 * [The evolution of the ICO file format, part 4: PNG images](https://devblogs.microsoft.com/oldnewthing/20101022-00/?p=12473)
+* [How do I set the alpha channel of a GDI bitmap to 255?](https://devblogs.microsoft.com/oldnewthing/20210915-00/?p=105687)
 
 ### Message String Resources
 * [Why does `Format­Message` say that `%0` terminates the message without a trailing newline? Is it secretly adding newlines?](https://devblogs.microsoft.com/oldnewthing/20191025-00/?p=103025)
@@ -433,6 +443,7 @@ written over the years.
 * [Those who do not understand the dialog manager are doomed to reimplement it, badly](https://devblogs.microsoft.com/oldnewthing/20070627-00/?p=26243)
 * [Other tricks with `WM_GETDLGCODE`](https://devblogs.microsoft.com/oldnewthing/20031126-00/?p=41703)
 * [`GetDialogBaseUnits` is a crock](https://devblogs.microsoft.com/oldnewthing/20040217-00/?p=40573)
+* [Why isn’t `MapDialogRect` mapping dialog rectangles?](https://devblogs.microsoft.com/oldnewthing/20211021-00/?p=105818)
 * [Why are dialog boxes initially created hidden?](https://devblogs.microsoft.com/oldnewthing/20040311-00/?p=40303)
 * [What's the deal with the `DS_SHELLFONT` flag?](https://devblogs.microsoft.com/oldnewthing/20050204-00/?p=36523)
 * [Why does `DS_SHELLFONT = DS_FIXEDSYS | DS_SETFONT`?](https://devblogs.microsoft.com/oldnewthing/20050207-00/?p=36513)
@@ -470,6 +481,7 @@ written over the years.
 * [How do I set the initial directory of the File Open dialog to a virtual directory?](https://devblogs.microsoft.com/oldnewthing/20170619-00/?p=96425)
 * [When I select multiple files in the File Open dialog, why does the last item come first?](https://devblogs.microsoft.com/oldnewthing/20190409-00/?p=102406)
 * [I set the `OFN_NONETWORKBUTTON` option in the `OPENFILENAME` structure, but it has no effect on the network item in the navigation pane](https://devblogs.microsoft.com/oldnewthing/20190705-00/?p=102660)
+* [How do I add custom controls to the common file open or file save dialogs?](https://devblogs.microsoft.com/oldnewthing/20211227-00/?p=106054)
 
 ### Control Navigation
 * [Using the `TAB` key to navigate in non-dialogs](https://devblogs.microsoft.com/oldnewthing/20031021-00/?p=42083)
@@ -509,6 +521,8 @@ written over the years.
 * [`PSM_ISDIALOGMESSAGE` is to modeless property sheets as `IsDialogMessage` is to modeless dialog boxes](https://devblogs.microsoft.com/oldnewthing/20100309-00/?p=14673)
 * [You can extend the `PROPSHEETPAGE` structure with your own bonus data](https://devblogs.microsoft.com/oldnewthing/20110318-00/?p=11183)
 * [The `PSN_SETACTIVE` notification is sent each time your wizard page is activated](https://devblogs.microsoft.com/oldnewthing/20111021-00/?p=9323)
+* [Appending additional payload to a `PROPSHEETPAGE` structure](https://devblogs.microsoft.com/oldnewthing/20211124-00/?p=105961)
+* [How do I pass an array of variable-sized `PROPSHEETPAGE` structures to PropertySheet?](https://devblogs.microsoft.com/oldnewthing/20211125-00/?p=105967)
 
 
 ## Controls
@@ -581,6 +595,7 @@ written over the years.
 
 ### Tab Controls
 * [How should I create controls on my dialog box that has a tab control?](https://devblogs.microsoft.com/oldnewthing/20191015-00/?p=102996)
+* [How am I supposed to create children of the Win32 tab control?](https://devblogs.microsoft.com/oldnewthing/20211110-00/?p=105889)
 
 ### Toolbars
 * [Why are there both `TBSTYLE_EX_VERTICAL` and `CCS_VERT`?](https://devblogs.microsoft.com/oldnewthing/20070328-00/?p=27473)
@@ -685,6 +700,7 @@ written over the years.
 * [Logical consequences of the way Windows converts single-clicks into double-clicks](https://devblogs.microsoft.com/oldnewthing/20041015-00/?p=37553)
 * [Implementing higher-order clicks](https://devblogs.microsoft.com/oldnewthing/20041018-00/?p=37543)
 * [How slow do you have to slow-double-click for it to be a rename?](https://devblogs.microsoft.com/oldnewthing/20081110-00/?p=20263)
+* [How can I prevent the mouse from moving in response to touch input?](https://devblogs.microsoft.com/oldnewthing/20210728-00/?p=105487)
 
 ### Dialog Messages
 * [Those who do not understand the dialog manager are doomed to reimplement it, badly](https://devblogs.microsoft.com/oldnewthing/20070627-00/?p=26243)
@@ -741,15 +757,25 @@ written over the years.
 * [Why doesn’t `GetTextExtentPoint` return the correct extent for strings containing tabs?](https://devblogs.microsoft.com/oldnewthing/20181012-00/?p=99955)
 * [Why are there trivial functions like `Copy­Rect` and `Equal­Rect`?](https://devblogs.microsoft.com/oldnewthing/20200224-00/?p=103472)
 * [More on trivial functions like `CopyRect` and `EqualRect`](https://devblogs.microsoft.com/oldnewthing/20200901-00/?p=104147)
+* [What are the consequences of increasing the per-process GDI handle limit?](https://devblogs.microsoft.com/oldnewthing/20210831-00/?p=105624)
+* [The focus rectangle says, “I’m not orange. I’m just drawn that way.”](https://devblogs.microsoft.com/oldnewthing/20211102-00/?p=105866)
+
+### Cursors
+* [What is the deal with the `SM_CXCURSOR` system metric?](https://devblogs.microsoft.com/oldnewthing/20210819-00/?p=105572)
+* [How do I find out the size of the mouse cursor?](https://devblogs.microsoft.com/oldnewthing/20210820-00/?p=105593)
 
 ### Brushes
 * [The hollow brush](https://devblogs.microsoft.com/oldnewthing/20040126-00/?p=40903)
 * [Other uses for bitmap brushes](https://devblogs.microsoft.com/oldnewthing/20031009-00/?p=42213)
 * [What is the DC brush good for?](https://devblogs.microsoft.com/oldnewthing/20050420-28/?p=35843)
+* [I know I can change the color of the DC pen, but what about the other attributes?](https://devblogs.microsoft.com/oldnewthing/20210721-00/?p=105467)
 * [How can I extract the color from a solid color GDI brush?](https://devblogs.microsoft.com/oldnewthing/20190802-00/?p=102747)
 
 ### Pens
 * [Is there a difference between creating a null pen with `Create­Pen` and just using the stock null pen?](https://devblogs.microsoft.com/oldnewthing/20200127-00/?p=103368)
+
+### Bitmaps
+* [How do I set the alpha channel of a GDI bitmap to 255?](https://devblogs.microsoft.com/oldnewthing/20210915-00/?p=105687)
 
 ### DIB
 * [A survey of the various ways of creating GDI bitmaps with predefined data](https://devblogs.microsoft.com/oldnewthing/20170331-00/?p=95875)
@@ -836,6 +862,7 @@ written over the years.
 
 ### COM Marshaling
 * [What is COM marshaling and how do I use it?](https://devblogs.microsoft.com/oldnewthing/20151020-00/?p=91321)
+* [On proper handling of buffers in COM and RPC methods](https://devblogs.microsoft.com/oldnewthing/20210715-00/?p=105446)
 * [What are the rules for `CoMarshalInterThreadInterfaceInStream` and `CoGetInterfaceAndReleaseStream`?](https://devblogs.microsoft.com/oldnewthing/20151021-00/?p=91311)
 * [What are the rules for `CoMarshalInterface` and `CoUnmarshalInterface`?](https://devblogs.microsoft.com/oldnewthing/20151022-00/?p=91301)
 * [`CoGetInterfaceAndReleaseStream` does not mix with smart pointers](https://devblogs.microsoft.com/oldnewthing/20151023-00/?p=91291)
@@ -874,9 +901,18 @@ written over the years.
 * [Avoiding double-destruction when an object is released](https://devblogs.microsoft.com/oldnewthing/20050928-10/?p=34013)
 * [The COM interface contract rules exist for a reason](https://devblogs.microsoft.com/oldnewthing/20051101-54/?p=33533)
 * [I’d like an `IUnknown`, I know you have many, I’ll take any of them](https://devblogs.microsoft.com/oldnewthing/20210101-00/?p=104639)
+* [A very brief introduction to patterns for implementing a COM object that hands out references to itself](https://devblogs.microsoft.com/oldnewthing/20211025-00/?p=105828)
+* [Giving a single object multiple COM identities, part 1](https://devblogs.microsoft.com/oldnewthing/20211026-00/?p=105834)
+* [Giving a single object multiple COM identities, part 2](https://devblogs.microsoft.com/oldnewthing/20211027-00/?p=105838)
+* [Giving a single object multiple COM identities, part 3](https://devblogs.microsoft.com/oldnewthing/20211028-00/?p=105852)
+* [Giving a single object multiple COM identities, part 4](https://devblogs.microsoft.com/oldnewthing/20211029-00/?p=105859)
+
 
 ### `IMoniker`
 * [Pidls and monikers do roughly the same thing, just backwards](https://devblogs.microsoft.com/oldnewthing/20060712-17/?p=30543)
+
+### `ICallback`
+* [A very brief introduction to patterns for implementing a COM object that hands out references to itself](https://devblogs.microsoft.com/oldnewthing/20211025-00/?p=105828)
 
 ### `IContextMenu`
 * [Why an object cannot be its own enumerator](https://devblogs.microsoft.com/oldnewthing/20040322-00/?p=40143)
@@ -909,10 +945,18 @@ written over the years.
 * [How can I cancel the `INamespace­Walk::Walk` operation?](https://devblogs.microsoft.com/oldnewthing/20171109-00/?p=97375)
 * [Cancelling the `INamespace­Walk::Walk` operation a little faster](https://devblogs.microsoft.com/oldnewthing/20171110-00/?p=97385)
 
+### `IStream`
+* [The subtleties of `Create­Stream­On­HGlobal`, part 1: Introduction and basic usage](https://devblogs.microsoft.com/oldnewthing/20210928-00/?p=105737)
+* [The subtleties of `Create­Stream­On­HGlobal`, part 2: Suppressing the deletion of an unknown `HGLOBAL`](https://devblogs.microsoft.com/oldnewthing/20210929-00/?p=105742)
+* [The subtleties of `Create­Stream­On­HGlobal`, part 3: Suppressing the deletion of a shared `HGLOBAL`](https://devblogs.microsoft.com/oldnewthing/20210930-00/?p=105745)
+* [The subtleties of `Create­Stream­On­HGlobal`, part 4: Non-movable memory](https://devblogs.microsoft.com/oldnewthing/20211001-00/?p=105748)
+* [A practical use for `GetHGlobal­FromStream` when sharing was never your intention](https://devblogs.microsoft.com/oldnewthing/20211115-00/?p=105922)
+
 ### `IVirtual­Desktop­Manager`
 * [Virtual desktops are an end-user window management feature, not a programmatic one](https://devblogs.microsoft.com/oldnewthing/20201123-00/?p=104476)
 
 ### Clipboard
+* [How ownership of the Windows clipboard is tracked in Win32](https://devblogs.microsoft.com/oldnewthing/20210526-00/?p=105252)
 * [What happens when applications try to copy text by sending `Ctrl+C`](https://devblogs.microsoft.com/oldnewthing/20110623-00/?p=10353)
 * [How do I make it so that users can copy static text on a dialog box to the clipboard easily?](https://devblogs.microsoft.com/oldnewthing/20120301-00/?p=8193)
 * [What is the proper handling of `WM_RENDERFORMAT` and `WM_RENDERALLFORMATS`?](https://devblogs.microsoft.com/oldnewthing/20121224-00/?p=5763)
@@ -934,6 +978,9 @@ written over the years.
 * [What happens if I drag the mouse by exactly the amount specified by `SM_CXDRAG`?](https://devblogs.microsoft.com/oldnewthing/20100304-00/?p=14733)
 * [How do I accept files to be opened via `IDropTarget` instead of on the command line?](https://devblogs.microsoft.com/oldnewthing/20100503-00/?p=14183)
 * [How do I accept files to be opened via `IDropTarget` instead of on the command line? - bonus content](https://devblogs.microsoft.com/oldnewthing/20100528-01/?p=13883)
+* [Using Explorer’s fancy drag/drop effects in your own programs](https://devblogs.microsoft.com/oldnewthing/20210512-00/?p=105208)
+* [Drag/drop effects: The little drop information box](https://devblogs.microsoft.com/oldnewthing/20210513-00/?p=105212)
+* [Why isn’t my shell namespace extension getting every single `DragOver` mouse message?](https://devblogs.microsoft.com/oldnewthing/20210514-00/?p=105214)
 
 ### Enumeration
 * [Using fibers to simplify enumerators, part 1: When life is easier for the enumerator](https://devblogs.microsoft.com/oldnewthing/20041229-00/?p=36853)
@@ -1020,6 +1067,9 @@ written over the years.
 * [How do I request that my out-of-process COM server run unelevated?](https://devblogs.microsoft.com/oldnewthing/20180905-00/?p=99655)
 * [How can a desktop app use a Windows Runtime object that infers UI context from its thread? The `IInitializeWithWindow` pattern](https://devblogs.microsoft.com/oldnewthing/20190412-00/?p=102413) (`IInitialize­With­Window`)
 * [How do I protect myself against a COM call that can hang? I’m already running the server out-of-process.](https://devblogs.microsoft.com/oldnewthing/20210122-00/?p=104750)
+* [What can I do about timer build-up when waiting for COM outbound calls to complete?](https://devblogs.microsoft.com/oldnewthing/20211008-50/?p=105780)
+* [Manipulating the positions of desktop icons](https://devblogs.microsoft.com/oldnewthing/20130318-00/?p=4933)
+* [A reminder about the correct way of accessing and manipulating the position of icons on the desktop](https://devblogs.microsoft.com/oldnewthing/20211122-00/?p=105948)
 
 
 ## Memory
@@ -1041,6 +1091,7 @@ written over the years.
 * [You can use an `OVERLAPPED` structure with synchronous I/O, too](https://devblogs.microsoft.com/oldnewthing/20120405-00/?p=7923)
 * [We're currently using `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH`, but we would like our `WriteFile` to go even faster](https://devblogs.microsoft.com/oldnewthing/20140306-00/?p=1583)
 * [On using `ILE_FLAG_WRITE_THROUGH` and `FILE_FLAG_NO_BUFFERING` for memory-mapped files](https://devblogs.microsoft.com/oldnewthing/20200819-00/?p=104093)
+* [On the interaction between the `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH` flags](https://devblogs.microsoft.com/oldnewthing/20210729-00/?p=105494)
 * [Why does my synchronous overlapped `ReadFile` return `FALSE` when the end of the file is reached?](https://devblogs.microsoft.com/oldnewthing/20150121-00/?p=44863)
 * [Why does `SetFileValidData` fail even though I enabled the `SE_MANAGE_VOLUME_NAME` privilege?](https://devblogs.microsoft.com/oldnewthing/20160603-00/?p=93565)
 * [Is `GENERIC_ALL` equivalent to `GENERIC_READ | GENERIC_WRITE | GENERIC_EXECUTE`?](https://devblogs.microsoft.com/oldnewthing/20170310-00/?p=95705)
@@ -1051,6 +1102,8 @@ written over the years.
 * [Taking a shortcut: You can query properties from a volume, and it will forward to the physical drive](https://devblogs.microsoft.com/oldnewthing/20201022-00/?p=104391)
 * [https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395](https://devblogs.microsoft.com/oldnewthing/20201023-00/?p=104395)
 * [How do I disassociate a thread from an I/O completion port?](https://devblogs.microsoft.com/oldnewthing/20210120-00/?p=104740)
+* [Is it okay to call `Map­View­Of­File` on the same mapping handle simultaneously from different threads?](https://devblogs.microsoft.com/oldnewthing/20210702-00/?p=105392)
+* [What are these dire multithreading consequences that the `GetFullPathName` documentation is trying to warn me about?](https://devblogs.microsoft.com/oldnewthing/20210816-00/?p=105562)
 
 ### Asynchronous Input and Output
 * [Developing the method for taking advantage of the fact that the `OVERLAPPED` associated with asynchronous I/O is passed by address](https://devblogs.microsoft.com/oldnewthing/20101220-01/?p=11963)
@@ -1066,6 +1119,8 @@ written over the years.
 * [Why are my file write operations synchronous, even though I opened the file as `FILE_FLAG_OVERLAPPED`?](https://devblogs.microsoft.com/oldnewthing/20180725-00/?p=99335)
 * [File-extending writes are not always synchronous, which is entirely within the contract](https://devblogs.microsoft.com/oldnewthing/20181019-00/?p=100015)
 * [Why you might need additional control over the secret event hiding inside the file object](https://devblogs.microsoft.com/oldnewthing/20200221-00/?p=103466)
+* [Why doesn’t my asynchronous read operation complete when I close the handle?](https://devblogs.microsoft.com/oldnewthing/20210730-00/?p=105501)
+* [The mental model for `StartThreadpoolIo`](https://devblogs.microsoft.com/oldnewthing/20211117-00/?p=105933)
 
 ### Files and Directories
 * [The Definitive Guide on Win32 to NT Path Conversion](http://googleprojectzero.blogspot.cz/2016/02/the-definitive-guide-on-win32-to-nt.html)
@@ -1086,6 +1141,8 @@ written over the years.
 * [Even if you open a file with GUID, you can still get its name, or at least one of its names](https://devblogs.microsoft.com/oldnewthing/20190410-00/?p=102408) (`GetFinalPathNameByHandle()`)
 * [How do I get from a file path to the volume that holds it?](https://devblogs.microsoft.com/oldnewthing/20201020-00/?p=104385)
 * [How do I get from a volume to the physical disk that holds it?](https://devblogs.microsoft.com/oldnewthing/20201021-00/?p=104387)
+* [Renaming a file is a multi-step process, only one of which is changing the name of the file
+](https://devblogs.microsoft.com/oldnewthing/20211022-00/?p=105822)
 
 ### ACL
 * [The `MoveSecurityAttributes` policy affects only how Explorer recalculates ACLs when a file is moved; everybody else is on their own](https://devblogs.microsoft.com/oldnewthing/20151014-00/?p=91361)
@@ -1107,6 +1164,7 @@ written over the years.
 * [Is a SID with zero subauthorities a valid SID? It depends whom you ask](https://devblogs.microsoft.com/oldnewthing/?p=45231)
 * [What’s the difference between duplicating the handle to a token and duplicating a token?](https://devblogs.microsoft.com/oldnewthing/20160511-00/?p=93446)
 * [I called `AdjustTokenPrivileges`, but I was still told that a necessary privilege was not held](https://devblogs.microsoft.com/oldnewthing/20190531-00/?p=102532)
+* [I called `AdjustTokenPrivileges`, but I was still told that a necessary privilege was not held, redux](https://devblogs.microsoft.com/oldnewthing/20211126-00/?p=105973)
 * [The history of the `EncodePointer` function for obfuscating pointers](https://devblogs.microsoft.com/oldnewthing/20201113-00/?p=104447)
 * [Additional helpful pseudo-handles: The process token, the thread token, and the effective token](https://devblogs.microsoft.com/oldnewthing/20210105-00/?p=104667)
 * [How can I tell whether my process is running as SYSTEM?](https://devblogs.microsoft.com/oldnewthing/20210106-00/?p=104669)
@@ -1126,6 +1184,7 @@ written over the years.
 * [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 3](https://devblogs.microsoft.com/oldnewthing/20201223-00/?p=104584)
 * [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 4](https://devblogs.microsoft.com/oldnewthing/20201224-00/?p=104599)
 * [How can I emulate the `REG_NOTIFY_THREAD_AGNOSTIC` flag on systems that don’t support it? part 5](https://devblogs.microsoft.com/oldnewthing/20201225-00/?p=104602)
+* [The history of passing a null pointer as the key name to `Reg­Open­Key­Ex`](https://devblogs.microsoft.com/oldnewthing/20210723-00/?p=105479)
 
 
 ## Strings and Locales
@@ -1179,3 +1238,7 @@ written over the years.
 * [Why are some system functions exported as stubs instead as forwarders?](https://devblogs.microsoft.com/oldnewthing/20200826-00/?p=104125)
 * [How can I check whether the user has disconnected from the session?](https://devblogs.microsoft.com/oldnewthing/20201202-00/?p=104504)
 * [Why does `PF_VIRT_FIRMWARE_ENABLED` return false even when virtualization is enabled in the firmware?](https://devblogs.microsoft.com/oldnewthing/20201216-00/?p=104550)
+* [How can I convert between IANA time zones and Windows registry-based time zones?](https://devblogs.microsoft.com/oldnewthing/20210527-00/?p=105255)
+* [The focus rectangle says, “I’m not orange. I’m just drawn that way.”](https://devblogs.microsoft.com/oldnewthing/20211102-00/?p=105866)
+* [Why does the precise point at which I get a stack overflow exception change from run to run?](https://devblogs.microsoft.com/oldnewthing/20211216-00/?p=106038) (structured exception handling aka SEH)
+* [How do I programmatically reposition monitors in a multiple-monitor system?](https://devblogs.microsoft.com/oldnewthing/20211222-00/?p=106048) (`ChangeDisplaySettingsEx()`)
