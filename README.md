@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-January_6,_2022-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-January_13,_2022-brightgreen)
 
 # The Old New Win32API
 
@@ -175,6 +175,7 @@ written over the years.
 * [Why am I getting an exception from the thread pool during process shutdown?](https://devblogs.microsoft.com/oldnewthing/20200130-00/?p=103385)
 * [What happens to the value returned from the function passed to `Queue­User­Work­Item`?](https://devblogs.microsoft.com/oldnewthing/20210121-00/?p=104746)
 * [The mental model for `StartThreadpoolIo`](https://devblogs.microsoft.com/oldnewthing/20211117-00/?p=105933)
+* [How can I detect that a thread pool work item is taking too long?](https://devblogs.microsoft.com/oldnewthing/20220110-00/?p=106139)
 
 
 ### Thread Affinity of Objects
@@ -831,6 +832,7 @@ written over the years.
 * [The macros for declaring COM interfaces, revisited: C version](https://devblogs.microsoft.com/oldnewthing/20200909-00/?p=104198)
 * [The macros for declaring COM interfaces, revisited: C++ version](https://devblogs.microsoft.com/oldnewthing/20200910-00/?p=104203)
 * [The macros for declaring COM interfaces, revisited: C++ implementation](https://devblogs.microsoft.com/oldnewthing/20200911-00/?p=104205)
+* [The oracle always tells the truth, even when it is wrong: COM method calls with a user-defined type as a return value](https://devblogs.microsoft.com/oldnewthing/20220113-00/?p=106152) (on problems of COM interfaces called from C code)
 
 ### COM Apartments
 * [The dreaded "main" threading model](https://devblogs.microsoft.com/oldnewthing/20040602-00/?p=39053)
@@ -1070,6 +1072,7 @@ written over the years.
 * [What can I do about timer build-up when waiting for COM outbound calls to complete?](https://devblogs.microsoft.com/oldnewthing/20211008-50/?p=105780)
 * [Manipulating the positions of desktop icons](https://devblogs.microsoft.com/oldnewthing/20130318-00/?p=4933)
 * [A reminder about the correct way of accessing and manipulating the position of icons on the desktop](https://devblogs.microsoft.com/oldnewthing/20211122-00/?p=105948)
+* [The oracle always tells the truth, even when it is wrong: COM method calls with a user-defined type as a return value](https://devblogs.microsoft.com/oldnewthing/20220113-00/?p=106152) (on problems of COM interfaces called from C code)
 
 
 ## Memory
@@ -1242,3 +1245,4 @@ written over the years.
 * [The focus rectangle says, “I’m not orange. I’m just drawn that way.”](https://devblogs.microsoft.com/oldnewthing/20211102-00/?p=105866)
 * [Why does the precise point at which I get a stack overflow exception change from run to run?](https://devblogs.microsoft.com/oldnewthing/20211216-00/?p=106038) (structured exception handling aka SEH)
 * [How do I programmatically reposition monitors in a multiple-monitor system?](https://devblogs.microsoft.com/oldnewthing/20211222-00/?p=106048) (`ChangeDisplaySettingsEx()`)
+* [How do I upgrade a 32-bit tick count to a 64-bit one?](https://devblogs.microsoft.com/oldnewthing/20220107-00/?p=106130)
