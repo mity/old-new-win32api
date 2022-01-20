@@ -6,7 +6,7 @@ This page provides a list of links to subset of posts of Raymond Chen's famous
 blog **[The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)**. The
 subset is limited mainly to Win32API and some COM-related stuff. 
 
-The reason why I manage this page is that it often provides information which
+The reason why I maintain this page is that it often provides information which
 is missing on MSDN or which is described there in a cryptic way, and also
 because the blog is not easily searchable.
 
