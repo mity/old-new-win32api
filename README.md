@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-January_13,_2022-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-January_28,_2022-brightgreen)
 
 # The Old New Win32API
 
@@ -1146,6 +1146,8 @@ written over the years.
 * [How do I get from a volume to the physical disk that holds it?](https://devblogs.microsoft.com/oldnewthing/20201021-00/?p=104387)
 * [Renaming a file is a multi-step process, only one of which is changing the name of the file
 ](https://devblogs.microsoft.com/oldnewthing/20211022-00/?p=105822)
+* [How can I recognize file systems that don’t support 64-bit unique file identifiers?](https://devblogs.microsoft.com/oldnewthing/20220127-00/?p=106199)
+* [How can I recognize whether two handles refer to the same underlying file?](https://devblogs.microsoft.com/oldnewthing/20220128-00/?p=106201)
 
 ### ACL
 * [The `MoveSecurityAttributes` policy affects only how Explorer recalculates ACLs when a file is moved; everybody else is on their own](https://devblogs.microsoft.com/oldnewthing/20151014-00/?p=91361)
@@ -1246,3 +1248,5 @@ written over the years.
 * [Why does the precise point at which I get a stack overflow exception change from run to run?](https://devblogs.microsoft.com/oldnewthing/20211216-00/?p=106038) (structured exception handling aka SEH)
 * [How do I programmatically reposition monitors in a multiple-monitor system?](https://devblogs.microsoft.com/oldnewthing/20211222-00/?p=106048) (`ChangeDisplaySettingsEx()`)
 * [How do I upgrade a 32-bit tick count to a 64-bit one?](https://devblogs.microsoft.com/oldnewthing/20220107-00/?p=106130)
+* [The error code you get might not be the one you want](https://devblogs.microsoft.com/oldnewthing/20220119-00/?p=106176)
+
