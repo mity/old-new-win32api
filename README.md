@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-January_28,_2022-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-March_14,_2022-brightgreen)
 
 # The Old New Win32API
 
@@ -104,6 +104,7 @@ written over the years.
   * [COM Static Store](#com-static-store)
   * [COM Marshaling](#com-marshaling)
   * [COM Error Handling](#com-error-handling)
+  * [COM Asynchronous Interfaces](#com-asynchronous-interfaces)
   * [GUIDs](#guids)
   * [COM Strings](#com-strings)
   * [COM Variants](#com-variants)
@@ -212,6 +213,7 @@ written over the years.
 * [How fair are SRW locks, particularly when there are both readers and writers?](https://devblogs.microsoft.com/oldnewthing/20170705-00/?p=96535)
 * [You can use a file as a synchronization object, too](https://devblogs.microsoft.com/oldnewthing/20140905-00/?p=63)
 * [Can I wait for a kernel event to become *unsignaled*?](https://devblogs.microsoft.com/oldnewthing/20200305-00/?p=103535)
+* [If the slim reader/writer lock (`SRWLOCK`) doesn’t remember who the shared lock owner is, does that mean it’s okay to acquire it recursively?](https://devblogs.microsoft.com/oldnewthing/20220304-00/?p=106309)
 
 ### `WaitOnAddress()`
 * [`WaitOnAddress` lets you create a synchronization object out of any data variable, even a byte](https://devblogs.microsoft.com/oldnewthing/20160823-00/?p=94145)
@@ -870,6 +872,7 @@ written over the years.
 * [`CoGetInterfaceAndReleaseStream` does not mix with smart pointers](https://devblogs.microsoft.com/oldnewthing/20151023-00/?p=91291)
 * [The COM marshaller uses the COM task allocator to allocate and free memory](https://devblogs.microsoft.com/oldnewthing/20090923-00/?p=16613)
 * [Why do I get a `QueryInterface(IID_IMarshal)` and then nothing?](https://devblogs.microsoft.com/oldnewthing/20040220-00/?p=40533)
+* [We batched up our COM requests and return a single stream of results, but the performance is still slow](https://devblogs.microsoft.com/oldnewthing/20160212-00/?p=93013)
 
 ### COM Error Handling
 * [What happens to my COM server-side object when clients die unexpectedly?](https://devblogs.microsoft.com/oldnewthing/20140409-00/?p=1293)
@@ -877,6 +880,17 @@ written over the years.
 * [How do I convert an `HRESULT` to a Win32 error code?](https://devblogs.microsoft.com/oldnewthing/20061103-07/?p=29133)
 * [Do not overload the `E_NOINTERFACE` error](https://devblogs.microsoft.com/oldnewthing/20061208-00/?p=28783)
 * [What does it mean when a call fails with `0x8000001F = RO_E_BLOCKED_CROSS_ASTA_CALL`?](https://devblogs.microsoft.com/oldnewthing/20210225-00/?p=104908)
+
+### COM Asynchronous Interfaces
+* [COM asynchronous interfaces, part 1: The basic pattern](https://devblogs.microsoft.com/oldnewthing/20220214-44/?p=106251)
+* [COM asynchronous interfaces, part 2: Abandoning the operation](https://devblogs.microsoft.com/oldnewthing/20220215-00/?p=106253)
+* [COM asynchronous interfaces, part 3: Abandoning the operation after a timeout](https://devblogs.microsoft.com/oldnewthing/20220216-00/?p=106261)
+* [COM asynchronous interfaces, part 4: Doing work while waiting for the asynchronous operation](https://devblogs.microsoft.com/oldnewthing/20220217-00/?p=106263)
+* [COM asynchronous interfaces, part 5: The unreliable server](https://devblogs.microsoft.com/oldnewthing/20220218-00/?p=106272)
+* [COM asynchronous interfaces, part 6: Learning about completion without polling](https://devblogs.microsoft.com/oldnewthing/20220221-42/?p=106275)
+* [COM asynchronous interfaces, part 7: Being called directly when the operation completes](https://devblogs.microsoft.com/oldnewthing/20220222-00/?p=106279)
+* [COM asynchronous interfaces, part 8: Asynchronous release, the problems](https://devblogs.microsoft.com/oldnewthing/20220223-00/?p=106282)
+* [COM asynchronous interfaces, part 9: Asynchronous release, assembling a solution](https://devblogs.microsoft.com/oldnewthing/20220224-00/?p=106288)
 
 ### GUIDs
 * [What's the difference between `UuidFromString`, `IIDFromString`, `CLSIDFromString`, `GUIDFromString`...](https://devblogs.microsoft.com/oldnewthing/20151015-00/?p=91351)
@@ -1073,6 +1087,8 @@ written over the years.
 * [Manipulating the positions of desktop icons](https://devblogs.microsoft.com/oldnewthing/20130318-00/?p=4933)
 * [A reminder about the correct way of accessing and manipulating the position of icons on the desktop](https://devblogs.microsoft.com/oldnewthing/20211122-00/?p=105948)
 * [The oracle always tells the truth, even when it is wrong: COM method calls with a user-defined type as a return value](https://devblogs.microsoft.com/oldnewthing/20220113-00/?p=106152) (on problems of COM interfaces called from C code)
+* [Notes on COM aggregation: Obtaining a pointer to your aggregated partner without introducing a reference cycle](https://devblogs.microsoft.com/oldnewthing/20220210-00/?p=106243)
+* [Notes on COM aggregation: How do you implement tear-offs in an aggregated object?](https://devblogs.microsoft.com/oldnewthing/20220211-00/?p=106246)
 
 
 ## Memory
@@ -1081,6 +1097,9 @@ written over the years.
 * [Creating a shared memory block that can grow in size](https://devblogs.microsoft.com/oldnewthing/20150130-00/?p=44793)
 * [Why do I have to pass a valid page protection value to `VirtualAlloc` even if it ignores it?](https://devblogs.microsoft.com/oldnewthing/20171227-00/?p=97656)
 * [How can I include/exclude specific memory blocks in user-mode crash dumps?](https://devblogs.microsoft.com/oldnewthing/20181011-00/?p=99945)
+* [`IsBadXxxPtr` should really be called CrashProgramRandomly](https://devblogs.microsoft.com/oldnewthing/20060927-07/?p=29563) (`IsBadWritePtr()` et al.)
+* [A closer look at the stack guard page](https://devblogs.microsoft.com/oldnewthing/20220203-00/?p=106215)
+* [The case of the stack overflow exception when the stack is nowhere near overflowing](https://devblogs.microsoft.com/oldnewthing/20220204-00/?p=106219)
 
 
 ## Input and Output
@@ -1249,4 +1268,7 @@ written over the years.
 * [How do I programmatically reposition monitors in a multiple-monitor system?](https://devblogs.microsoft.com/oldnewthing/20211222-00/?p=106048) (`ChangeDisplaySettingsEx()`)
 * [How do I upgrade a 32-bit tick count to a 64-bit one?](https://devblogs.microsoft.com/oldnewthing/20220107-00/?p=106130)
 * [The error code you get might not be the one you want](https://devblogs.microsoft.com/oldnewthing/20220119-00/?p=106176)
-
+* [How can I find out which processor architectures are supported via emulation by the current system?](https://devblogs.microsoft.com/oldnewthing/20220209-00/?p=106239)
+* [How can I detect whether the system has a keyboard attached? On the `GetRawInputDeviceList` function](https://devblogs.microsoft.com/oldnewthing/20220302-00/?p=106303)
+* [Filtering out fake keyboards from the `GetRawInputDeviceList` function](https://devblogs.microsoft.com/oldnewthing/20220303-00/?p=106306)
+* [How expensive is `PssCaptureSnapshot`? How fast is it? How much memory does it consume?](https://devblogs.microsoft.com/oldnewthing/20220314-00/?p=106346)
