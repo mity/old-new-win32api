@@ -1228,7 +1228,7 @@ written over the years.
 
 * [The security check happens at the acquisition of the handle](https://devblogs.microsoft.com/oldnewthing/20200320-00/?p=103579)
 * [What is the default security descriptor?](https://devblogs.microsoft.com/oldnewthing/20040312-00/?p=40273)
-* [How do I convert a SID between binary and string forms?](https://devblogs.microsoft.com/oldnewthing/20150501-00/?p=44964)
+* [How do I convert a SID between binary and string forms?](https://devblogs.microsoft.com/oldnewthing/20150501-00/?p=40253)
 * [What are these SIDs of the form `S-1-15-2-xxx`?](https://devblogs.microsoft.com/oldnewthing/20220502-00/?p=106550)
 * [What are these SIDs of the form `S-1-15-3-xxx`?](https://devblogs.microsoft.com/oldnewthing/20220503-00/?p=106557)
 * [An easy way to determine whether you have a particular file permission](https://devblogs.microsoft.com/oldnewthing/20040604-00/?p=39023)
