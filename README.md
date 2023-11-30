@@ -835,6 +835,7 @@ written over the years.
 * [The macros for declaring COM interfaces, revisited: C++ version](https://devblogs.microsoft.com/oldnewthing/20200910-00/?p=104203)
 * [The macros for declaring COM interfaces, revisited: C++ implementation](https://devblogs.microsoft.com/oldnewthing/20200911-00/?p=104205)
 * [The oracle always tells the truth, even when it is wrong: COM method calls with a user-defined type as a return value](https://devblogs.microsoft.com/oldnewthing/20220113-00/?p=106152) (on problems of COM interfaces called from C code)
+* [The COM interface contract rules exist for a reason](https://devblogs.microsoft.com/oldnewthing/20051101-54/?p=33533)
 
 ### COM Apartments
 * [The dreaded "main" threading model](https://devblogs.microsoft.com/oldnewthing/20040602-00/?p=39053)
@@ -915,7 +916,6 @@ written over the years.
 * [The ways people mess up `IUnknown::QueryInterface`, episode 4](https://devblogs.microsoft.com/oldnewthing/20110811-00/?p=9923)
 * [COM object destructors are very sensitive functions](https://devblogs.microsoft.com/oldnewthing/20050927-13/?p=34023)
 * [Avoiding double-destruction when an object is released](https://devblogs.microsoft.com/oldnewthing/20050928-10/?p=34013)
-* [The COM interface contract rules exist for a reason](https://devblogs.microsoft.com/oldnewthing/20051101-54/?p=33533)
 * [I’d like an `IUnknown`, I know you have many, I’ll take any of them](https://devblogs.microsoft.com/oldnewthing/20210101-00/?p=104639)
 * [A very brief introduction to patterns for implementing a COM object that hands out references to itself](https://devblogs.microsoft.com/oldnewthing/20211025-00/?p=105828)
 * [Giving a single object multiple COM identities, part 1](https://devblogs.microsoft.com/oldnewthing/20211026-00/?p=105834)
