@@ -1,4 +1,4 @@
-![Last Sync](https://img.shields.io/badge/Last_Sync-November_30,_2023-brightgreen)
+![Last Sync](https://img.shields.io/badge/Last_Sync-February_17,_2024-brightgreen)
 
 # The Old New Win32API
 
@@ -180,6 +180,7 @@ written over the years.
 * [What happens to the value returned from the function passed to `Queue­User­Work­Item`?](https://devblogs.microsoft.com/oldnewthing/20210121-00/?p=104746)
 * [The mental model for `StartThreadpoolIo`](https://devblogs.microsoft.com/oldnewthing/20211117-00/?p=105933)
 * [How can I detect that a thread pool work item is taking too long?](https://devblogs.microsoft.com/oldnewthing/20220110-00/?p=106139)
+* [How can I close a thread pool and cancel all work that had been queued to it?](https://devblogs.microsoft.com/oldnewthing/20240205-00/?p=109360)
 
 
 ### Thread Affinity of Objects
@@ -274,6 +275,7 @@ written over the years.
 * [The different kinds of DLL planting](https://devblogs.microsoft.com/oldnewthing/20191231-00/?p=103282)
 * [Why does `GetModuleInfo` fail to produce an entry point for executables?](https://devblogs.microsoft.com/oldnewthing/20211014-00/?p=105800)
 * [What does the `SizeOfImage` mean in the `MODULEINFO` structure?](https://devblogs.microsoft.com/oldnewthing/20211015-00/?p=105802)
+* [How do I suppress the error box that appears when a `LoadLibrary` fails?](https://devblogs.microsoft.com/oldnewthing/20240208-00/?p=109374)
 
 ### `DllMain()`
 * [Some reasons not to do anything scary in your `DllMain`](https://devblogs.microsoft.com/oldnewthing/20040127-00/?p=40873)
@@ -403,6 +405,7 @@ written over the years.
 ### Window Classes
 * [What is the `HINSTANCE` passed to `CreateWindow` and `RegisterClass` used for?](https://devblogs.microsoft.com/oldnewthing/20050418-59/?p=35873)
 * [Using the wrong `HINSTANCE` in `RegisterClass` is like identity theft](https://devblogs.microsoft.com/oldnewthing/20110715-00/?p=10133)
+* [If the `RegisterClass` function takes ownership of the custom background brush, why is it leaking?](https://devblogs.microsoft.com/oldnewthing/20231218-00/?p=109163)
 * [Changing a window class affects all windows which belong to that class](https://devblogs.microsoft.com/oldnewthing/20060227-12/?p=32133)
 * [What does `CS_SAVEBITS` do?](https://devblogs.microsoft.com/oldnewthing/20060428-00/?p=31373)
 * [What does the `CS_OWNDC` class style do?](https://devblogs.microsoft.com/oldnewthing/20060601-06/?p=31003)
@@ -1038,6 +1041,7 @@ written over the years.
 * [Using Explorer’s fancy drag/drop effects in your own programs](https://devblogs.microsoft.com/oldnewthing/20210512-00/?p=105208)
 * [Drag/drop effects: The little drop information box](https://devblogs.microsoft.com/oldnewthing/20210513-00/?p=105212)
 * [Why isn’t my shell namespace extension getting every single `DragOver` mouse message?](https://devblogs.microsoft.com/oldnewthing/20210514-00/?p=105214)
+* [Why doesn’t my program get fancy drag/drop effects in high contrast mode with `CLSID_Drag­Drop­Helper`?](https://devblogs.microsoft.com/oldnewthing/20240207-00/?p=109372)
 
 ### Enumeration
 * [Using fibers to simplify enumerators, part 1: When life is easier for the enumerator](https://devblogs.microsoft.com/oldnewthing/20041229-00/?p=36853)
@@ -1145,6 +1149,7 @@ written over the years.
 * [`IsBadXxxPtr` should really be called CrashProgramRandomly](https://devblogs.microsoft.com/oldnewthing/20060927-07/?p=29563) (`IsBadWritePtr()` et al.)
 * [A closer look at the stack guard page](https://devblogs.microsoft.com/oldnewthing/20220203-00/?p=106215)
 * [The case of the stack overflow exception when the stack is nowhere near overflowing](https://devblogs.microsoft.com/oldnewthing/20220204-00/?p=106219)
+* [How to allocate address space with a custom alignment or in a custom address region](https://devblogs.microsoft.com/oldnewthing/20231229-00/?p=109204)
 
 
 ## Input and Output
@@ -1343,3 +1348,6 @@ written over the years.
 * [How can I detect programmatically whether Windows is an N or KN version?](https://devblogs.microsoft.com/oldnewthing/20221229-00/?p=107623)
 * [How should I interpret the various values of `NLM_CONNECTIVITY`?](https://devblogs.microsoft.com/oldnewthing/20230112-00/?p=107700)
 * [How can I find out the last time a user logged on from C++?](https://devblogs.microsoft.com/oldnewthing/20230622-00/?p=108369)
+* [How can I specify icons for my app to use on the Start menu in high contrast mode?](https://devblogs.microsoft.com/oldnewthing/20240104-00/?p=109239)
+* [How can I add an environment variable to a process launched via `Shell­Execute­Ex` or `IContext­Menu`?](https://devblogs.microsoft.com/oldnewthing/20240131-00/?p=109342)
+* [Functions that return the size of a required buffer generally return upper bounds, not tight bounds](https://devblogs.microsoft.com/oldnewthing/20240214-00/?p=109400)
