@@ -1163,7 +1163,7 @@ written over the years.
 * [I used `FILE_FLAG_SEQUENTIAL_SCAN` but it didn’t seem to speed up my sequential scanning](https://devblogs.microsoft.com/oldnewthing/20221130-00/?p=107505)
 * [You can use an `OVERLAPPED` structure with synchronous I/O, too](https://devblogs.microsoft.com/oldnewthing/20120405-00/?p=7923)
 * [We're currently using `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH`, but we would like our `WriteFile` to go even faster](https://devblogs.microsoft.com/oldnewthing/20140306-00/?p=1583)
-* [On using `ILE_FLAG_WRITE_THROUGH` and `FILE_FLAG_NO_BUFFERING` for memory-mapped files](https://devblogs.microsoft.com/oldnewthing/20200819-00/?p=104093)
+* [On using `FILE_FLAG_WRITE_THROUGH` and `FILE_FLAG_NO_BUFFERING` for memory-mapped files](https://devblogs.microsoft.com/oldnewthing/20200819-00/?p=104093)
 * [On the interaction between the `FILE_FLAG_NO_BUFFERING` and `FILE_FLAG_WRITE_THROUGH` flags](https://devblogs.microsoft.com/oldnewthing/20210729-00/?p=105494)
 * [Why does my synchronous overlapped `ReadFile` return `FALSE` when the end of the file is reached?](https://devblogs.microsoft.com/oldnewthing/20150121-00/?p=44863)
 * [Why does `SetFileValidData` fail even though I enabled the `SE_MANAGE_VOLUME_NAME` privilege?](https://devblogs.microsoft.com/oldnewthing/20160603-00/?p=93565)
