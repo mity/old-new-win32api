@@ -400,7 +400,7 @@ written over the years.
 * [Why isn't my transparent static control transparent?](https://devblogs.microsoft.com/oldnewthing/20111028-00/?p=9243) (`WS_EX_TRANSPARENT`)
 * [Like the cake, `WS_EX_TRANSPARENT` is a lie, or at least not the entire truth](https://devblogs.microsoft.com/oldnewthing/20121217-00/?p=5823)
 * [I used `WS_EX_COMPOSITED` to get rid of my redrawing flicker, but it resulted in sluggish response](https://devblogs.microsoft.com/oldnewthing/20171018-00/?p=97245)
-* [How can I use `WS_CLIP­CHILDREN` and still be able to draw a control with a transparent background?](https://devblogs.microsoft.com/oldnewthing/20180926-00/?p=99825)
+* [How can I use `WS_CLIP­CHILDREN` and still be able to draw a control with a transparent background?](https://devblogs.microsoft.com/oldnewthing/20181005-00/?p=99905)
 
 ### Window Classes
 * [What is the `HINSTANCE` passed to `CreateWindow` and `RegisterClass` used for?](https://devblogs.microsoft.com/oldnewthing/20050418-59/?p=35873)
